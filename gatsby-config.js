@@ -1,34 +1,34 @@
 module.exports = {
+  __experimentalThemes: [
+    {
+      resolve: 'gatsby-theme-shopify-poulo',
+      options: {
+        navigation: {
+          menu: [
+            {
+              link: '/men',
+              displayName: 'Men',
+            },
+            {
+              link: '/women',
+              displayName: 'Women',
+            },
+          ],
+        },
+        shopifyOptions: {
+          shopName: 'graphql',
+          accessToken: 'dd4d4dc146542ba7763305d71d1b3d38',
+        },
+      },
+    },
+  ],
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: 'Test Shop',
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    shop: {
+      logo:
+        'http://raw.githubusercontent.com/AlexanderProd/gatsby-shopify-starter/master/ressources/shopify%2Bgatsby.png',
+    },
   },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
-  ],
-}
+};
