@@ -25,10 +25,19 @@ module.exports = {
   siteMetadata: {
     title: 'Test Shop',
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: '@gatsbyjs',
     shop: {
       logo:
         'http://raw.githubusercontent.com/AlexanderProd/gatsby-shopify-starter/master/ressources/shopify%2Bgatsby.png',
     },
   },
+  plugins: [
+    'gatsby-plugin-typescript',
+    {
+      resolve: 'gatsby-plugin-compile-es6-packages',
+      options: {
+        modules: ['gatsby-theme-shopify-poulo'],
+      },
+    },
+  ],
 };

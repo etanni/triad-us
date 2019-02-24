@@ -4848,6 +4848,14 @@ gatsby-plugin-catch-links@^2.0.5:
     "@babel/runtime" "^7.0.0"
     escape-string-regexp "^1.0.5"
 
+gatsby-plugin-compile-es6-packages@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-compile-es6-packages/-/gatsby-plugin-compile-es6-packages-1.0.6.tgz#4c864d9fa697dc5b41b4b5c9e4215c49b722f086"
+  integrity sha512-yUW+6NWNBpj43jS3gFRRt5mZ4P7xRbTPMSF8lrtJ+TOLcfJum5OAki1Be1yZHM7HSM68L9eipHIgm82pW1RdOg==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    regex-escape "^3.4.8"
+
 gatsby-plugin-emotion@^4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-emotion/-/gatsby-plugin-emotion-4.0.4.tgz#de005fc40cf02d8f30dfa7dd2c6b6ec394c10fbc"
@@ -4973,10 +4981,10 @@ gatsby-source-shopify@^2.0.16:
     p-iteration "^1.1.7"
     prettyjson "^1.2.1"
 
-gatsby-theme-shopify-poulo@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.0.3.tgz#8cd2be16172984caec636ff8638a1c382dad9c1b"
-  integrity sha512-++HO8No0HAoj9cHcaeCSgiesrtI36WOtMVQxs4+SQxaVCjE5kLd/r7GZRQR8+Gjmg/b4XBeAlCoMBp6wxqfWEg==
+gatsby-theme-shopify-poulo@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.1.0.tgz#6eb1f3d2446d2bd1905dd1f3a66c647188cae29b"
+  integrity sha512-uadJJ0uCq9SxYz8P5OdraLdcC6oyJnCi/FR24Mdi2Vv1ceDTH8nOWYpGotnW9g5A/Ck5sKE5ZP3ZWWwdl946yA==
   dependencies:
     "@babel/plugin-proposal-export-default-from" "^7.0.0"
     "@emotion/core" "^10.0.7"
@@ -9212,6 +9220,11 @@ regenerator-transform@^0.13.3:
   integrity sha512-T0QMBjK3J0MtxjPmdIMXm72Wvj2Abb0Bd4HADdfijwMdoIsyQZ6fWC7kDFhk2YinBBEMZDL7Y7wh0J1sGx3S4A==
   dependencies:
     private "^0.1.6"
+
+regex-escape@^3.4.8:
+  version "3.4.9"
+  resolved "https://registry.yarnpkg.com/regex-escape/-/regex-escape-3.4.9.tgz#407b413562e2373d56994ff213e693658ea4f8f7"
+  integrity sha512-Cv9rjwyQwVhn3L097ysanWsEElurmxDj6Cc4Ut23z7e6hzRbrNvF3Le7yAciMfuzyb0sZwSr0ZHunMNCIoy2/g==
 
 regex-not@^1.0.0, regex-not@^1.0.2:
   version "1.0.2"
