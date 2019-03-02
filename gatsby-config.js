@@ -28,7 +28,7 @@ module.exports = {
     author: '@gatsbyjs',
     shop: {
       logo:
-        'http://raw.githubusercontent.com/AlexanderProd/gatsby-shopify-starter/master/ressources/shopify%2Bgatsby.png',
+        'https://raw.githubusercontent.com/AlexanderProd/gatsby-shopify-starter/master/ressources/shopify%2Bgatsby.png',
     },
   },
   plugins: [
