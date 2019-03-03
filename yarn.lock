@@ -986,11 +986,6 @@
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.2.tgz#0e670ea254d559241b6eeb3894f8754991e73220"
   integrity sha512-ui3WwXmjTaY73fOQ3/m3nnajU/Orhi6cEu5rzX+BrAAJxa3eITXZ5ch9suPqtM03OWhAHhPSyBGCN4UKoxO20Q==
 
-"@types/local-storage@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@types/local-storage/-/local-storage-1.4.0.tgz#2838b4c2556b79edf87af75d13a10b25de7a8041"
-  integrity sha512-a1lcfo+7Cao6ROLcj/OAuMXbfFi8H4wB0T0ROcmxs0BJVGtNkfSqTc5VY9Hbql5wL9FrsefeIOGnjSHrBZTeCQ==
-
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -4901,15 +4896,14 @@ gatsby-source-shopify@^2.0.16:
     p-iteration "^1.1.7"
     prettyjson "^1.2.1"
 
-gatsby-theme-shopify-poulo@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.2.0.tgz#18303dc2340edd7fb11a66f4a8d07eac6e438724"
-  integrity sha512-Pn5ixOzakSiDYxERCux1nv1PGbefgD2cK857DRBf2DM6OTZrixbDFbr49xui5R8/p/g4pCqtuuM7U2wWbb7K9w==
+gatsby-theme-shopify-poulo@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.2.1.tgz#05e13dc923c28217f15dc9d2bb011e1650a228b1"
+  integrity sha512-/9Vbp7m8qT8isEjALenviUL8k5yYoPCBAAeuq85nIgZIIJC0NZkw2lcyzOZ3ZLKSTDy04+KCkrEYUtB8yrUAcQ==
   dependencies:
     "@emotion/core" "^10.0.7"
     "@emotion/styled" "^10.0.7"
     "@reach/router" "^1.2.1"
-    "@types/local-storage" "^1.4.0"
     algoliasearch "^3.32.0"
     axios "^0.18.0"
     dotenv "^6.2.0"
