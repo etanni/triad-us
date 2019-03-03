@@ -986,6 +986,11 @@
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.2.tgz#0e670ea254d559241b6eeb3894f8754991e73220"
   integrity sha512-ui3WwXmjTaY73fOQ3/m3nnajU/Orhi6cEu5rzX+BrAAJxa3eITXZ5ch9suPqtM03OWhAHhPSyBGCN4UKoxO20Q==
 
+"@types/local-storage@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@types/local-storage/-/local-storage-1.4.0.tgz#2838b4c2556b79edf87af75d13a10b25de7a8041"
+  integrity sha512-a1lcfo+7Cao6ROLcj/OAuMXbfFi8H4wB0T0ROcmxs0BJVGtNkfSqTc5VY9Hbql5wL9FrsefeIOGnjSHrBZTeCQ==
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -4896,14 +4901,15 @@ gatsby-source-shopify@^2.0.16:
     p-iteration "^1.1.7"
     prettyjson "^1.2.1"
 
-gatsby-theme-shopify-poulo@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.1.6.tgz#3940b260b6c730c64f628acbe712a4a0924981d5"
-  integrity sha512-7WOCOiU5Giw7ZIeetXAuUx7gFyd7p8eDa4ISimUP4/0r80yfnIW8Ql+3bGOksHIcAwuH+eU76eVUq+4rAuAnKA==
+gatsby-theme-shopify-poulo@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.2.0.tgz#18303dc2340edd7fb11a66f4a8d07eac6e438724"
+  integrity sha512-Pn5ixOzakSiDYxERCux1nv1PGbefgD2cK857DRBf2DM6OTZrixbDFbr49xui5R8/p/g4pCqtuuM7U2wWbb7K9w==
   dependencies:
     "@emotion/core" "^10.0.7"
     "@emotion/styled" "^10.0.7"
     "@reach/router" "^1.2.1"
+    "@types/local-storage" "^1.4.0"
     algoliasearch "^3.32.0"
     axios "^0.18.0"
     dotenv "^6.2.0"
@@ -4917,10 +4923,12 @@ gatsby-theme-shopify-poulo@^0.1.6:
     gatsby-plugin-typescript "^2.0.9"
     gatsby-source-shopify "^2.0.16"
     gatsby-transformer-sharp "^2.1.5"
+    local-storage "^1.4.2"
     lodash "^4.17.4"
     prop-types "^15.7.2"
     react-helmet "^5.2.0"
     react-icons "^3.4.0"
+    shopify-buy "^2.1.0"
     url-search-params-polyfill "^5.0.0"
     whatwg-fetch "^3.0.0"
 
@@ -6690,6 +6698,11 @@ loader-utils@^1.0.2, loader-utils@^1.1.0:
     big.js "^5.2.2"
     emojis-list "^2.0.0"
     json5 "^1.0.1"
+
+local-storage@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/local-storage/-/local-storage-1.4.2.tgz#7ec2d3fb7f1ea91a85b160d3a785058f87bfbfa5"
+  integrity sha1-fsLT+38eqRqFsWDTp4UFj4e/v6U=
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -9584,6 +9597,11 @@ shell-quote@1.6.1:
     array-map "~0.0.0"
     array-reduce "~0.0.0"
     jsonify "~0.0.0"
+
+shopify-buy@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/shopify-buy/-/shopify-buy-2.1.0.tgz#7fd4459660c1b7c269dbdc5fd8a54d2ca8158e6f"
+  integrity sha512-Z1vcCbW+lZIyaGWfFPSrPJ1DYYiUsI73U+j5MTMU51bi1FUxOYwEGc8UsbAobEPcfuoXGfyTzhdF7n6FqexsCQ==
 
 sift@^5.1.0:
   version "5.1.0"
