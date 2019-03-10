@@ -8,10 +8,38 @@ module.exports = {
             {
               link: '/men',
               displayName: 'Men',
+              subMenu: [
+                {
+                  link: '/men/pants',
+                  displayName: 'Pants',
+                },
+                {
+                  link: '/men/tees',
+                  displayName: 'Tees',
+                },
+                {
+                  link: '/men/shorts',
+                  displayName: 'Shorts',
+                },
+              ],
             },
             {
               link: '/women',
               displayName: 'Women',
+              subMenu: [
+                {
+                  link: '/women/pants',
+                  displayName: 'Pants',
+                },
+                {
+                  link: '/women/tees',
+                  displayName: 'Tees',
+                },
+                {
+                  link: '/women/shorts',
+                  displayName: 'Shorts',
+                },
+              ],
             },
           ],
         },
