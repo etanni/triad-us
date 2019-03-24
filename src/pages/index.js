@@ -24,7 +24,7 @@ export default ({ data: { allShopifyProduct } }) => {
         <h3>What a shop</h3>
       </Hero>
       <Section fullWidth>
-        <SectionTitle>Wazzup, we have the best content</SectionTitle>
+        <SectionTitle>Wazzzup, we have the best content</SectionTitle>
         <SectionDescription>
           Yeah, but your scientists were so preoccupied with whether or not they
           could, they didn't stop to think if they should. I was part of

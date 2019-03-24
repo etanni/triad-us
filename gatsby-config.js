@@ -59,13 +59,5 @@ module.exports = {
         'https://raw.githubusercontent.com/AlexanderProd/gatsby-shopify-starter/master/ressources/shopify%2Bgatsby.png',
     },
   },
-  plugins: [
-    'gatsby-plugin-typescript',
-    {
-      resolve: 'gatsby-plugin-compile-es6-packages',
-      options: {
-        modules: ['gatsby-theme-shopify-poulo'],
-      },
-    },
-  ],
+  plugins: [],
 };
