@@ -56,14 +56,10 @@ export default ({ data: { allShopifyProduct } }) => {
         <ImageGridTwoLargeFourSmall gap="1px">
           <LargeChild
             background={`url(${LargeBG1}) center bottom/cover no-repeat`}
-          >
-            Large 1
-          </LargeChild>
+          />
           <LargeChild
             background={`url(${LargeBG2}) center bottom/cover no-repeat`}
-          >
-            Large 2
-          </LargeChild>
+          />
           <SmallChild
             background={`url(${SmallBG1}) center bottom/cover no-repeat`}
           />
