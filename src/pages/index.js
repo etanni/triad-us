@@ -9,7 +9,16 @@ import {
   SectionTitle,
   SectionSubTitle,
   Hero,
+  ImageGridTwoLargeFourSmall,
+  LargeChild,
+  SmallChild,
 } from 'gatsby-theme-shopify-poulo';
+import LargeBG1 from '../images/large-bg-1.png';
+import LargeBG2 from '../images/large-bg-2.png';
+import SmallBG1 from '../images/small-bg-1.png';
+import SmallBG2 from '../images/small-bg-2.png';
+import SmallBG3 from '../images/small-bg-3.png';
+import SmallBG4 from '../images/small-bg-4.png';
 import { Promotion } from '../hero-bgs/Promotion';
 import { ColoredSection } from '../styles';
 
@@ -41,6 +50,33 @@ export default ({ data: { allShopifyProduct } }) => {
             'posie-crew',
           ]}
         />
+      </Section>
+      <Section fullWidth>
+        <SectionTitle noDescription>Any place, any time!</SectionTitle>
+        <ImageGridTwoLargeFourSmall gap="1px">
+          <LargeChild
+            background={`url(${LargeBG1}) center bottom/cover no-repeat`}
+          >
+            Large 1
+          </LargeChild>
+          <LargeChild
+            background={`url(${LargeBG2}) center bottom/cover no-repeat`}
+          >
+            Large 2
+          </LargeChild>
+          <SmallChild
+            background={`url(${SmallBG1}) center bottom/cover no-repeat`}
+          />
+          <SmallChild
+            background={`url(${SmallBG2}) center bottom/cover no-repeat`}
+          />
+          <SmallChild
+            background={`url(${SmallBG3}) center bottom/cover no-repeat`}
+          />
+          <SmallChild
+            background={`url(${SmallBG4}) center bottom/cover no-repeat`}
+          />
+        </ImageGridTwoLargeFourSmall>
       </Section>
       <ColoredSection>
         <SectionTitle>Wazzup, we have the best content</SectionTitle>
