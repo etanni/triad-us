@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 import PromotionBG from '../images/Promotion-BG.jpg';
 
 const PromotionWrapper = styled.div`
-  background-color: #1f4940;
+  background-color: #1f494055;
   height: 100%;
   width: 100%;
 `;
