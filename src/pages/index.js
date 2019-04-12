@@ -11,6 +11,7 @@ import {
   LargeChild,
   SmallChild,
   Button,
+  PageLayout,
 } from 'gatsby-theme-shopify-poulo';
 import LargeBG1 from '../images/large-bg-1.png';
 import LargeBG2 from '../images/large-bg-2.png';
@@ -24,7 +25,7 @@ export default ({ data: { allShopifyProduct } }) => {
   const [products] = useState(allShopifyProduct.edges);
 
   return (
-    <div>
+    <PageLayout transparentHeader={true}>
       <Seo title="Welcome" />
       <Hero
         fullWidth
@@ -92,7 +93,7 @@ export default ({ data: { allShopifyProduct } }) => {
           <Button>Read Our Story</Button>
         </Hero>
       </Section>
-    </div>
+    </PageLayout>
   );
 };
 
