@@ -32,7 +32,7 @@ export default ({ data: { allShopifyProduct } }) => {
         background={<Promotion />}
         contentPosition="bottom-center"
       >
-        <Button>Shop All Men</Button>
+        <Button type="button">Shop All Men</Button>
       </Hero>
       <Section>
         <ProductCardList
@@ -90,7 +90,7 @@ export default ({ data: { allShopifyProduct } }) => {
           contentPosition="bottom-center"
           height="440px"
         >
-          <Button>Read Our Story</Button>
+          <Button type="button">Read Our Story</Button>
         </Hero>
       </Section>
     </PageLayout>
