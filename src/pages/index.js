@@ -45,12 +45,12 @@ export default ({ data: { allShopifyProduct } }) => {
           ]}
         />
       </Section>
-      <Section>
+      <Section fullWidth>
         <SectionTitle noDescription>
           With breathable Seamless construction, our Swiftly collection
           minimizes chafing, maximizes comfort.
         </SectionTitle>
-        <ImageGridTwoLargeFourSmall>
+        <ImageGridTwoLargeFourSmall fullWidth>
           <LargeChild
             background={`url(${LargeBG1}) center bottom/cover no-repeat`}
           />
@@ -58,8 +58,6 @@ export default ({ data: { allShopifyProduct } }) => {
             background={`url(${LargeBG2}) center bottom/cover no-repeat`}
           />
           <SmallChild
-            hoverColor="#ff000055"
-            hasHover
             background={`url(${SmallBG1}) center bottom/cover no-repeat`}
           />
           <SmallChild
