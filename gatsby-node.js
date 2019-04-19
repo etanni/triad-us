@@ -39,8 +39,6 @@ exports.createPages = async ({ graphql, actions }) => {
         path: `/product/${node.handle}/`,
         component: `${__dirname}/src/templates/product-2.js`,
         context: {
-          // Data passed to context is available
-          // in page queries as GraphQL variables.
           handle: node.handle,
         },
       });
@@ -49,8 +47,6 @@ exports.createPages = async ({ graphql, actions }) => {
         path: `/product/${node.handle}/`,
         component: `${__dirname}/src/templates/product.js`,
         context: {
-          // Data passed to context is available
-          // in page queries as GraphQL variables.
           handle: node.handle,
         },
       });

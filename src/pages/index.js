@@ -13,6 +13,8 @@ import {
   Button,
   PageLayout,
 } from 'gatsby-theme-shopify-poulo';
+
+import ImageGridContent from '../components/ImageGridContent';
 import LargeBG1 from '../images/large-bg-1.png';
 import LargeBG2 from '../images/large-bg-2.png';
 import SmallBG1 from '../images/small-bg-1.png';
@@ -53,10 +55,26 @@ export default ({ data: { allShopifyProduct } }) => {
         <ImageGridTwoLargeFourSmall fullWidth>
           <LargeChild
             background={`url(${LargeBG1}) center bottom/cover no-repeat`}
-          />
+            hoverColor="#aaaaaa22"
+            hasHover
+          >
+            <ImageGridContent
+              title="TOPS"
+              subTitle="soft & cozy"
+              button={<Button>Shop Tops</Button>}
+            />
+          </LargeChild>
           <LargeChild
             background={`url(${LargeBG2}) center bottom/cover no-repeat`}
-          />
+            hoverColor="#aaaaaa22"
+            hasHover
+          >
+            <ImageGridContent
+              title="BOTTOMS"
+              subTitle="light & breezy"
+              button={<Button>Shop Bottoms</Button>}
+            />
+          </LargeChild>
           <SmallChild
             background={`url(${SmallBG1}) center bottom/cover no-repeat`}
           />
