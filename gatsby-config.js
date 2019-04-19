@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   __experimentalThemes: [
     {
@@ -6,38 +8,24 @@ module.exports = {
         navigation: {
           menu: [
             {
-              link: '/men',
-              displayName: 'Men',
-              subMenu: [
-                {
-                  link: '/men/pants',
-                  displayName: 'Pants',
-                },
-                {
-                  link: '/men/tees',
-                  displayName: 'Tees',
-                },
-                {
-                  link: '/men/shorts',
-                  displayName: 'Shorts',
-                },
-              ],
+              link: '/tops',
+              displayName: 'Tops',
             },
             {
-              link: '/women',
-              displayName: 'Women',
+              link: '/bottoms',
+              displayName: 'Bottoms',
+            },
+            {
+              link: '/accessories',
+              displayName: 'Accessories',
+            },
+            {
+              link: '/collections',
+              displayName: 'Collections',
               subMenu: [
                 {
-                  link: '/women/pants',
-                  displayName: 'Pants',
-                },
-                {
-                  link: '/women/tees',
-                  displayName: 'Tees',
-                },
-                {
-                  link: '/women/shorts',
-                  displayName: 'Shorts',
+                  link: '',
+                  displayName: '',
                 },
               ],
             },

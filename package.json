@@ -10,7 +10,7 @@
     "gatsby-plugin-compile-es6-packages": "^1.0.6",
     "gatsby-plugin-manifest": "^2.0.19",
     "gatsby-plugin-typescript": "^2.0.9",
-    "gatsby-theme-shopify-poulo": "^0.4.1",
+    "gatsby-theme-shopify-poulo": "^0.4.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
