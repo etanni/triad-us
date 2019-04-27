@@ -32,7 +32,8 @@ module.exports = {
   ],
   siteMetadata: {
     title: 'Test Shop',
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description:
+      'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
     author: '@gatsbyjs',
     shop: {},
   },
@@ -42,6 +43,18 @@ module.exports = {
       resolve: 'gatsby-plugin-compile-es6-packages',
       options: {
         modules: ['gatsby-theme-shopify-poulo'],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Triad',
+        short_name: 'Triad',
+        start_url: '/',
+        background_color: '#fff',
+        theme_color: '#000',
+        display: 'standalone',
+        icon: 'src/images/icon.png',
       },
     },
   ],
