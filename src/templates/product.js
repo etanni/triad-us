@@ -1,23 +1,22 @@
 import React, { useState } from 'react';
 import { graphql } from 'gatsby';
-
 import {
   ProductCardList,
   Section,
   ProductPage,
-  SectionTitle,
   Hero,
-  ImageGridTwoLargeFourSmall,
-  LargeChild,
-  SmallChild,
   Button,
+  EqualColumns,
+  EqualColumn,
+  ImageGridTwoHalfOneFullwidth,
+  OneHalfChild,
+  FullwidthChild,
 } from 'gatsby-theme-shopify-poulo';
+
+import ImageGridContent from '../components/ImageGridContent';
 import LargeBG1 from '../images/large-bg-1.png';
-import LargeBG2 from '../images/large-bg-2.png';
 import SmallBG1 from '../images/small-bg-1.png';
 import SmallBG2 from '../images/small-bg-2.png';
-import SmallBG3 from '../images/small-bg-3.png';
-import SmallBG4 from '../images/small-bg-4.png';
 import { Promotion } from '../hero-bgs/Promotion';
 
 const Product = ({ data }) => {
@@ -26,30 +25,43 @@ const Product = ({ data }) => {
   return (
     <ProductPage data={data}>
       <Section>
-        <SectionTitle noDescription>
-          With breathable Seamless construction, our Swiftly collection
-          minimizes chafing, maximizes comfort.
-        </SectionTitle>
-        <ImageGridTwoLargeFourSmall>
-          <LargeChild
-            background={`url(${LargeBG1}) center bottom/cover no-repeat`}
-          />
-          <LargeChild
-            background={`url(${LargeBG2}) center bottom/cover no-repeat`}
-          />
-          <SmallChild
+        <EqualColumns background="#f2f2f2">
+          <EqualColumn buttonText="More Infos">
+            FREE SHIPPING & FREE RETURNS
+            <br />
+            45 DAY RETURNS
+          </EqualColumn>
+          <EqualColumn buttonText="More Infos">
+            FREE SHIPPING & FREE RETURNS
+            <br />
+            45 DAY RETURNS
+          </EqualColumn>
+          <EqualColumn buttonText="More Infos">
+            FREE SHIPPING & FREE RETURNS
+            <br />
+            45 DAY RETURNS
+          </EqualColumn>
+        </EqualColumns>
+      </Section>
+      <Section fullWidth>
+        <ImageGridTwoHalfOneFullwidth rowHeight={400} fullWidth>
+          <OneHalfChild
             background={`url(${SmallBG1}) center bottom/cover no-repeat`}
-          />
-          <SmallChild
+          >
+            <ImageGridContent
+              title="Lorem Ipsum Dolor Sit"
+              subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+            />
+          </OneHalfChild>
+          <OneHalfChild
             background={`url(${SmallBG2}) center bottom/cover no-repeat`}
           />
-          <SmallChild
-            background={`url(${SmallBG3}) center bottom/cover no-repeat`}
-          />
-          <SmallChild
-            background={`url(${SmallBG4}) center bottom/cover no-repeat`}
-          />
-        </ImageGridTwoLargeFourSmall>
+          <FullwidthChild
+            background={`url(${LargeBG1}) center bottom/cover no-repeat`}
+          >
+            <ImageGridContent subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." />
+          </FullwidthChild>
+        </ImageGridTwoHalfOneFullwidth>
       </Section>
       <Section>
         <ProductCardList

@@ -60,7 +60,7 @@ export default ({ data: { allShopifyProduct } }) => {
           >
             <ImageGridContent
               title="TOPS"
-              subTitle="soft & cozy"
+              description="soft & cozy"
               button={<Button>Shop Tops</Button>}
             />
           </LargeChild>
@@ -71,7 +71,7 @@ export default ({ data: { allShopifyProduct } }) => {
           >
             <ImageGridContent
               title="BOTTOMS"
-              subTitle="light & breezy"
+              description="light & breezy"
               button={<Button>Shop Bottoms</Button>}
             />
           </LargeChild>
