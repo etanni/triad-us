@@ -8,26 +8,18 @@ module.exports = {
         navigation: {
           menu: [
             {
-              link: '/tops',
-              displayName: 'Tops',
-            },
-            {
-              link: '/bottoms',
-              displayName: 'Bottoms',
-            },
-            {
-              link: '/accessories',
-              displayName: 'Accessories',
-            },
-            {
               link: '/collections',
-              displayName: 'Collections',
+              displayName: 'Shop',
               subMenu: [
                 {
                   link: '',
                   displayName: '',
                 },
               ],
+            },
+            {
+              link: '/about-us',
+              displayName: 'About Us',
             },
           ],
         },
@@ -42,10 +34,7 @@ module.exports = {
     title: 'Test Shop',
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: '@gatsbyjs',
-    shop: {
-      logo:
-        'https://raw.githubusercontent.com/AlexanderProd/gatsby-shopify-starter/master/ressources/shopify%2Bgatsby.png',
-    },
+    shop: {},
   },
   plugins: [
     'gatsby-plugin-typescript',

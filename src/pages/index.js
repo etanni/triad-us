@@ -15,6 +15,7 @@ import {
 } from 'gatsby-theme-shopify-poulo';
 
 import ImageGridContent from '../components/ImageGridContent';
+import WhiteLogo from '../images/white-logo.png';
 import LargeBG1 from '../images/large-bg-1.png';
 import LargeBG2 from '../images/large-bg-2.png';
 import SmallBG1 from '../images/small-bg-1.png';
@@ -27,7 +28,7 @@ export default ({ data: { allShopifyProduct } }) => {
   const [products] = useState(allShopifyProduct.edges);
 
   return (
-    <PageLayout transparentHeader={true}>
+    <PageLayout transparentHeader={true} transparentLogo={WhiteLogo}>
       <Seo title="Welcome" />
       <Hero
         fullWidth
