@@ -24,8 +24,8 @@ module.exports = {
           ],
         },
         shopifyOptions: {
-          shopName: 'graphql',
-          accessToken: 'dd4d4dc146542ba7763305d71d1b3d38',
+          shopName: 'poulo2',
+          accessToken: 'e06636fefd3902d3a578c9624e064944',
         },
       },
     },

@@ -47,12 +47,7 @@ const Product = ({ data }) => {
       <Section>
         <ProductCardList
           products={products}
-          handles={[
-            'rise-crew',
-            'posie-crew',
-            'hanra-shirt',
-            'henning-ss-crew',
-          ]}
+          handles={['100-nike', '101-nike', '102-wpn', '103-wpn']}
         />
       </Section>
       <Section fullWidth>
