@@ -29,7 +29,7 @@ export default ({ data: { allShopifyProduct } }) => {
 
   return (
     <PageLayout transparentHeader={true} transparentLogo={WhiteLogo}>
-      <Seo title="Welcome" />
+      <Seo title="Home" />
       <Hero
         fullWidth
         background={<Promotion />}

@@ -31,10 +31,10 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: 'Test Shop',
+    title: 'Triad - Made to be free',
     description:
-      'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@gatsbyjs',
+      'Triad is quality fashion with high-tech performance at accessible prices. Modern design, all-week performance, and industry-leading technology. Triad is the lifestyle brand for people made to be free.',
+    author: '@weartriad',
     shop: {},
   },
   plugins: [
