@@ -34,8 +34,8 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
 
-  await result.data.allShopifyProduct.edges.forEach(({ node, tags = [] }) => {
-    if (tags.indexOf('template-2') !== -1) {
+  await result.data.allShopifyProduct.edges.forEach(({ node }) => {
+    if (node.tags.indexOf('template-2') !== -1) {
       createPage({
         path: `/product/${node.handle}/`,
         component: `${__dirname}/src/templates/product-2.js`,

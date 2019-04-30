@@ -17,13 +17,14 @@ import ImageGridContent from '../components/ImageGridContent';
 import LargeBG1 from '../images/large-bg-1.png';
 import SmallBG1 from '../images/small-bg-1.png';
 import SmallBG2 from '../images/small-bg-2.png';
+import ScrollLogo from '../images/scroll-logo.png';
 import { Promotion } from '../hero-bgs/Promotion';
 
 const Product = ({ data }) => {
   const [products] = useState(data.allShopifyProduct.edges);
 
   return (
-    <ProductPage data={data}>
+    <ProductPage data={data} scrollingLogo={ScrollLogo}>
       <Section>
         <EqualColumns background="#f2f2f2">
           <EqualColumn buttonText="More Infos">
