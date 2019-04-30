@@ -8,6 +8,26 @@ module.exports = {
         navigation: {
           menu: [
             {
+              link: '/tops',
+              displayName: 'Tops',
+              subMenu: [
+                {
+                  link: '',
+                  displayName: '',
+                },
+              ],
+            },
+            {
+              link: '/bottoms',
+              displayName: 'Bottoms',
+              subMenu: [
+                {
+                  link: '',
+                  displayName: '',
+                },
+              ],
+            },
+            {
               link: '/collections',
               displayName: 'Shop',
               subMenu: [
