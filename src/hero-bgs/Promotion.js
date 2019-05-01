@@ -2,10 +2,10 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 // @ts-ignore
-import PromotionBG from '../images/Promotion-BG.jpg';
+import PromotionBG from '../images/large-bg-1.png';
 
 const PromotionWrapper = styled.div`
-  background-color: #1f494055;
+  background-color: #1f494000;
   height: 100%;
   width: 100%;
 `;
@@ -21,7 +21,7 @@ const PromotionImage = styled.img`
 export const Promotion = () => {
   return (
     <PromotionWrapper>
-      <PromotionImage src={PromotionBG} />
+      <PromotionImage src={PromotionBG} alt="promotion image" />
     </PromotionWrapper>
   );
 };
