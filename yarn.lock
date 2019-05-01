@@ -4964,10 +4964,10 @@ gatsby-source-shopify@^2.0.16:
     p-iteration "^1.1.7"
     prettyjson "^1.2.1"
 
-gatsby-theme-shopify-poulo@^0.5.11:
-  version "0.5.11"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.5.11.tgz#75031ead525a13c858ccce1d971821312bcdd22f"
-  integrity sha512-Wm0f4pS4RGFWm+3RL03ijMwCJJQOzhgu2s3YIypf2LEoK+fb775w1od1TzzH2KksOrmkjE3p1cCHAJYdlvIzpA==
+gatsby-theme-shopify-poulo@^0.5.12:
+  version "0.5.12"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.5.12.tgz#65a71c812959a64c20869fb4bd1d75111beede93"
+  integrity sha512-Apa8E3s1udwE8SnNCjiUfV0FlklACScw789jH8xOkeCfLKrElOeeaT06+dxFAzTtN9iKA1lHRY8l47f5XzmZqg==
   dependencies:
     "@emotion/core" "^10.0.9"
     "@emotion/styled" "^10.0.9"
