@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Metropolis' !important;
+  font-family: 'Metropolis', 'Montserrat', 'Helvetica', serif !important;
 }
 
 @font-face {
