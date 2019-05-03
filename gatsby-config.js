@@ -43,6 +43,7 @@ module.exports = {
             },
           ],
         },
+        paymentMethods: [],
         shopifyOptions: {
           shopName: 'poulo2',
           accessToken: 'e06636fefd3902d3a578c9624e064944',
@@ -61,6 +62,12 @@ module.exports = {
       'Triad is quality fashion with high-tech performance at accessible prices. Modern design, all-week performance, and industry-leading technology. Triad is the lifestyle brand for people made to be free.',
     author: '@weartriad',
     shop: {},
+    footerDisclaimer: '© 2019 | Triad Limited',
+    social: {
+      twitter: 'weartriad',
+      instagram: 'weartriad',
+      facebook: 'weartriad',
+    },
   },
   plugins: [
     'gatsby-plugin-typescript',
