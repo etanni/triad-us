@@ -72,7 +72,7 @@ const Product = ({ data }) => {
       </Section>
       <Section>
         <Hero
-          background={<Promotion />}
+          background={<Promotion src={data.promotionBG.childImageSharp} />}
           contentPosition="bottom-center"
           height="440px"
         >
@@ -85,6 +85,13 @@ const Product = ({ data }) => {
 
 export const query = graphql`
   query($handle: String!) {
+    promotionBG: file(relativePath: { eq: "large-bg-1.png" }) {
+      childImageSharp {
+        fluid(sizes: "75vh") {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
     allShopifyProduct {
       edges {
         node {

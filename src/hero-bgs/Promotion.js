@@ -1,27 +1,33 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import Img from 'gatsby-image';
 
 // @ts-ignore
-import PromotionBG from '../images/large-bg-1.png';
+// import PromotionBG from '../images/large-bg-1.png';
 
 const PromotionWrapper = styled.div`
   background-color: #1f494000;
   height: 100%;
   width: 100%;
 `;
-const PromotionImage = styled.img`
+const PromotionImage = styled(Img)`
   mix-blend-mode: multiply;
   filter: grayscale(100%);
-  margin: 0;
-  width: 100%;
   height: 100%;
-  object-fit: cover;
+  width: 100%;
+  /* object-fit: cover;
+  object-position: bottom center; */
 `;
 
-export const Promotion = () => {
+export const Promotion = ({ src }) => {
   return (
     <PromotionWrapper>
-      <PromotionImage src={PromotionBG} alt="promotion image" />
+      <PromotionImage
+        fluid={src.fluid}
+        alt="promotion image"
+        imgStyle={{ objectFit: 'cover', objectPosition: 'center center' }}
+      />
+      {/* <PromotionImage src={PromotionBG} /> */}
     </PromotionWrapper>
   );
 };

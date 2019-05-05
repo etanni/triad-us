@@ -5,6 +5,7 @@ module.exports = {
     {
       resolve: 'gatsby-theme-shopify-poulo',
       options: {
+        dirName: __dirname,
         navigation: {
           menu: [
             {

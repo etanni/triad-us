@@ -25,7 +25,7 @@ import SmallBG3 from '../images/small-bg-3.png';
 import SmallBG4 from '../images/small-bg-4.png';
 import { Promotion } from '../hero-bgs/Promotion';
 
-export default ({ data: { allShopifyProduct } }) => {
+export default ({ data: { promotionBG, allShopifyProduct } }) => {
   const [products] = useState(allShopifyProduct.edges);
 
   return (
@@ -37,7 +37,7 @@ export default ({ data: { allShopifyProduct } }) => {
       <Seo title="Home" />
       <Hero
         fullWidth
-        background={<Promotion />}
+        background={<Promotion src={promotionBG.childImageSharp} />}
         contentPosition="bottom-center"
       >
         <Button type="button">Shop All Men</Button>
@@ -98,7 +98,7 @@ export default ({ data: { allShopifyProduct } }) => {
       </Section>
       <Section>
         <Hero
-          background={<Promotion />}
+          background={<Promotion src={promotionBG.childImageSharp} />}
           contentPosition="bottom-center"
           height="440px"
         >
@@ -111,6 +111,13 @@ export default ({ data: { allShopifyProduct } }) => {
 
 export const query = graphql`
   query {
+    promotionBG: file(relativePath: { eq: "large-bg-1.png" }) {
+      childImageSharp {
+        fluid(sizes: "75vh") {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
     allShopifyProduct {
       edges {
         node {

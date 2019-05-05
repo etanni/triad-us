@@ -3375,6 +3375,11 @@ destroy@~1.0.4:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
+detect-browser@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/detect-browser/-/detect-browser-4.5.0.tgz#6a726bd21e9dd77b4e18676515d48c88b4156ee3"
+  integrity sha512-uwyZNBwMhvRIOBIBTuDu+h4/a2bfFE/elUIvAOuKuBZcuy6yAJ/9dOe4r3wyWO/ZW2PcsP0dhEwiVwTPTTJp2Q==
+
 detect-indent@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-5.0.0.tgz#3871cc0a6a002e8c3e5b3cf7f336264675f06b9d"
@@ -4950,6 +4955,27 @@ gatsby-source-filesystem@^2.0.23:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
+gatsby-source-filesystem@^2.0.33:
+  version "2.0.33"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.0.33.tgz#c8b4ed9a231a325ca356f739bab77ea8fad5824d"
+  integrity sha512-GH/Y8dJ/+EKie3ckMrcHn1MsYcLVNbglCKNoTaDuY31rFCh3gq6310bdi8u//J+dcgcz7ggHXTN0W7FXxWF9FQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    better-queue "^3.8.7"
+    bluebird "^3.5.0"
+    chokidar "2.1.2"
+    file-type "^10.2.0"
+    fs-extra "^5.0.0"
+    got "^7.1.0"
+    md5-file "^3.1.1"
+    mime "^2.2.0"
+    pretty-bytes "^4.0.2"
+    progress "^1.1.8"
+    read-chunk "^3.0.0"
+    slash "^1.0.0"
+    valid-url "^1.0.9"
+    xstate "^3.1.0"
+
 gatsby-source-shopify@^2.0.16:
   version "2.0.17"
   resolved "https://registry.yarnpkg.com/gatsby-source-shopify/-/gatsby-source-shopify-2.0.17.tgz#604fab87e94c940b26e48373a26c3f6ff2685351"
@@ -4964,16 +4990,17 @@ gatsby-source-shopify@^2.0.16:
     p-iteration "^1.1.7"
     prettyjson "^1.2.1"
 
-gatsby-theme-shopify-poulo@^0.5.18:
-  version "0.5.18"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.5.18.tgz#771d177a7c2b0fa10c2edd75be584cc3f697db24"
-  integrity sha512-d2gCVsdEn5s36CIAMZIm0IzwK3j/gFuVVzkeZeh+Qvlhtvq+/mza+a8Gi7PvVcaPpS4U1ZqVeFc/qXWmjdeitA==
+gatsby-theme-shopify-poulo@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.6.0.tgz#e8bdfc7fc00e7999a913f293146f379743eedf18"
+  integrity sha512-0E6fPnAD8zfIpjUlPSwj6wer5yRbMbia3AQ3UQEYb/0G/rQ8kepr8WMF3A6ibkTME/LT06MrDyrWFOFQEefYMw==
   dependencies:
     "@emotion/core" "^10.0.9"
     "@emotion/styled" "^10.0.9"
     "@reach/router" "^1.2.1"
     algoliasearch "^3.32.1"
     axios "^0.18.0"
+    detect-browser "^4.5.0"
     dotenv "^7.0.0"
     emotion-theming "^10.0.9"
     gatsby-image "^2.0.34"
@@ -4984,6 +5011,7 @@ gatsby-theme-shopify-poulo@^0.5.18:
     gatsby-plugin-react-helmet "^3.0.10"
     gatsby-plugin-sharp "^2.0.8"
     gatsby-plugin-typescript "^2.0.9"
+    gatsby-source-filesystem "^2.0.33"
     gatsby-source-shopify "^2.0.16"
     gatsby-transformer-sharp "^2.1.5"
     local-storage "^1.4.2"
