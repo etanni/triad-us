@@ -3,9 +3,10 @@ import { graphql } from 'gatsby';
 import {
   ProductCardList,
   Section,
+  SectionTitle,
+  SectionDescription,
   ProductPage,
   Hero,
-  Button,
   EqualColumns,
   EqualColumn,
   ImageGridTwoHalfOneFullwidth,
@@ -14,9 +15,8 @@ import {
 } from 'gatsby-theme-shopify-poulo';
 
 import ImageGridContent from '../components/ImageGridContent';
-import LargeBG1 from '../images/large-bg-1.png';
-import SmallBG1 from '../images/small-bg-1.png';
-import SmallBG2 from '../images/small-bg-2.png';
+import LargeBG2 from '../images/large-bg-1.png';
+import TechImage from '../images/tech-image.png';
 import ScrollLogo from '../images/scroll-logo.png';
 import { Promotion } from '../hero-bgs/Promotion';
 
@@ -27,57 +27,55 @@ const Product = ({ data }) => {
     <ProductPage data={data} scrollingLogo={ScrollLogo}>
       <Section>
         <EqualColumns background="#f2f2f2">
-          <EqualColumn buttonText="More Infos">
-            FREE SHIPPING & FREE RETURNS
-            <br />
-            45 DAY RETURNS
-          </EqualColumn>
-          <EqualColumn buttonText="More Infos">
-            FREE SHIPPING & FREE RETURNS
-            <br />
-            45 DAY RETURNS
-          </EqualColumn>
-          <EqualColumn buttonText="More Infos">
-            FREE SHIPPING & FREE RETURNS
-            <br />
-            45 DAY RETURNS
-          </EqualColumn>
+          <EqualColumn>NO SWEAT.</EqualColumn>
+          <EqualColumn>NO STAINS.</EqualColumn>
+          <EqualColumn>NO SMELL.</EqualColumn>
         </EqualColumns>
       </Section>
       <Section fullWidth>
+        <Hero
+          background={<Promotion src={data.promotionBG.childImageSharp} />}
+          contentPosition="bottom-center"
+          height="75vh"
+          fullWidth
+        >
+          <SectionTitle>Always top performance</SectionTitle>
+          <SectionDescription noMargin>
+            Style Redefined in this new collection
+          </SectionDescription>
+        </Hero>
+      </Section>
+      <Section fullWidth>
+        <SectionTitle noMargin>
+          With breathable Seamless construction, our Swiftly collection
+          minimizes chafing, maximizes comfort.
+        </SectionTitle>
+      </Section>
+      <Section fullWidth>
         <ImageGridTwoHalfOneFullwidth rowHeight={400} fullWidth>
-          <OneHalfChild
-            background={`url(${SmallBG1}) center bottom/cover no-repeat`}
-          >
+          <OneHalfChild background={`#efefef`}>
             <ImageGridContent
-              title="Lorem Ipsum Dolor Sit"
-              subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+              color="black"
+              title="The Secret of Triad"
+              subTitle="We wanted the most performant workout and life clothes on the market. We achieved this with Technology called Bioco."
             />
           </OneHalfChild>
           <OneHalfChild
-            background={`url(${SmallBG2}) center bottom/cover no-repeat`}
+            background={`url(${TechImage}) center bottom/cover no-repeat`}
           />
           <FullwidthChild
-            background={`url(${LargeBG1}) center bottom/cover no-repeat`}
+            background={`url(${LargeBG2}) center bottom/cover no-repeat`}
           >
-            <ImageGridContent subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor." />
+            <ImageGridContent subTitle="It allows our fabrics to kill any bacteria cells and therefore eliminate all smell from your clothes no matter how often you wear it. All of this, without using dangerous chemicals, that endanger our environment." />
           </FullwidthChild>
         </ImageGridTwoHalfOneFullwidth>
       </Section>
       <Section>
+        <SectionTitle noDescription>Complete your Gear</SectionTitle>
         <ProductCardList
           products={products}
           handles={['100-nike', '101-nike', '102-wpn', '103-wpn']}
         />
-      </Section>
-      <Section>
-        <Hero
-          background={<Promotion src={data.promotionBG.childImageSharp} />}
-          contentPosition="bottom-center"
-          height="440px"
-        >
-          <Button type="button">Read Our Story</Button>
-        </Hero>
       </Section>
     </ProductPage>
   );
@@ -85,7 +83,7 @@ const Product = ({ data }) => {
 
 export const query = graphql`
   query($handle: String!) {
-    promotionBG: file(relativePath: { eq: "large-bg-1.png" }) {
+    promotionBG: file(relativePath: { eq: "large-bg-2.png" }) {
       childImageSharp {
         fluid(sizes: "75vh") {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG

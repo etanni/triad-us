@@ -1,10 +1,22 @@
 import React from 'react';
 
-import { Wrapper, Title, SubTitle, Description, AbsoluteButton } from './styles';
+import {
+  Wrapper,
+  Title,
+  SubTitle,
+  Description,
+  AbsoluteButton,
+} from './styles';
 
-const ImageGridContent = ({ button, title, subTitle, description }) => {
+const ImageGridContent = ({
+  color = 'white',
+  button,
+  title,
+  subTitle,
+  description,
+}) => {
   return (
-    <Wrapper>
+    <Wrapper style={{ color }}>
       {title ? <Title>{title}</Title> : null}
       {subTitle ? <SubTitle>{subTitle}</SubTitle> : null}
       {description ? <Description>{description}</Description> : null}

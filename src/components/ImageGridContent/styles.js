@@ -20,14 +20,12 @@ export const Wrapper = styled.div`
 export const Title = styled.span`
   display: block;
   margin-bottom: ${layout.spacing * 3}px;
-  color: #fff;
   font-weight: 700;
   font-size: 40px;
   line-height: 1;
 `;
 export const SubTitle = styled.span`
   display: block;
-  color: #fff;
   font-size: 15px;
   font-weight: 600;
   line-height: 24px;
@@ -38,7 +36,6 @@ export const SubTitle = styled.span`
 `;
 export const Description = styled.span`
   display: block;
-  color: #fff;
   font-size: 15px;
   font-weight: 600;
   line-height: 24px;
