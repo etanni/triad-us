@@ -4,6 +4,7 @@ import {
   ProductCardList,
   Section,
   SectionTitle,
+  SectionSubTitle,
   SectionDescription,
   ProductPage,
   Hero,
@@ -15,8 +16,6 @@ import {
 } from 'gatsby-theme-shopify-poulo';
 
 import ImageGridContent from '../components/ImageGridContent';
-import LargeBG2 from '../images/large-bg-1.png';
-import TechImage from '../images/tech-image.png';
 import ScrollLogo from '../images/scroll-logo.png';
 import { Promotion } from '../hero-bgs/Promotion';
 
@@ -34,7 +33,9 @@ const Product = ({ data }) => {
       </Section>
       <Section fullWidth>
         <Hero
-          background={<Promotion src={data.promotionBG.childImageSharp} />}
+          background={
+            <Promotion fluidImage={data.promotionBG.childImageSharp.fluid} />
+          }
           contentPosition="bottom-center"
           height="75vh"
           fullWidth
@@ -46,25 +47,28 @@ const Product = ({ data }) => {
         </Hero>
       </Section>
       <Section fullWidth>
-        <SectionTitle noMargin>
+        <SectionSubTitle noMargin>
           With breathable Seamless construction, our Swiftly collection
           minimizes chafing, maximizes comfort.
-        </SectionTitle>
+        </SectionSubTitle>
       </Section>
       <Section fullWidth>
         <ImageGridTwoHalfOneFullwidth rowHeight={400} fullWidth>
           <OneHalfChild background={`#efefef`}>
             <ImageGridContent
               color="black"
-              title="The Secret of Triad"
-              subTitle="We wanted the most performant workout and life clothes on the market. We achieved this with Technology called Bioco."
+              subTitle="The Secret of Triad"
+              description="We wanted the most performant workout and life clothes on the market. We achieved this with Technology called Bioco."
             />
           </OneHalfChild>
           <OneHalfChild
-            background={`url(${TechImage}) center bottom/cover no-repeat`}
+            backgroundFluid={data.techImage.childImageSharp.fluid}
+            backgroundAlt="Tech Image of Bioco"
           />
           <FullwidthChild
-            background={`url(${LargeBG2}) center bottom/cover no-repeat`}
+            backgroundFluid={data.fullwidthImage.childImageSharp.fluid}
+            backgroundAlt="Man Working Out"
+            backgroundImgStyle={{ objectPosition: 'center bottom' }}
           >
             <ImageGridContent subTitle="It allows our fabrics to kill any bacteria cells and therefore eliminate all smell from your clothes no matter how often you wear it. All of this, without using dangerous chemicals, that endanger our environment." />
           </FullwidthChild>
@@ -83,9 +87,23 @@ const Product = ({ data }) => {
 
 export const query = graphql`
   query($handle: String!) {
+    fullwidthImage: file(relativePath: { eq: "large-bg-1.png" }) {
+      childImageSharp {
+        fluid(sizes: "100vw") {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
     promotionBG: file(relativePath: { eq: "large-bg-2.png" }) {
       childImageSharp {
         fluid(sizes: "75vh") {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    techImage: file(relativePath: { eq: "tech-image.png" }) {
+      childImageSharp {
+        fluid(sizes: "50vw") {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }

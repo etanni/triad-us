@@ -72,7 +72,9 @@ const Product = ({ data }) => {
       </Section>
       <Section>
         <Hero
-          background={<Promotion src={data.promotionBG.childImageSharp} />}
+          background={
+            <Promotion fluidImage={data.promotionBG.childImageSharp.fluid} />
+          }
           contentPosition="bottom-center"
           height="440px"
         >

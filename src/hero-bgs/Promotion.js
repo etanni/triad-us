@@ -19,11 +19,11 @@ const PromotionImage = styled(Img)`
   object-position: bottom center; */
 `;
 
-export const Promotion = ({ src }) => {
+export const Promotion = ({ fluidImage }) => {
   return (
     <PromotionWrapper>
       <PromotionImage
-        fluid={src.fluid}
+        fluid={fluidImage}
         alt="promotion image"
         imgStyle={{ objectFit: 'cover', objectPosition: 'center center' }}
       />

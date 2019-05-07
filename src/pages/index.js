@@ -37,7 +37,9 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
       <Seo title="Home" />
       <Hero
         fullWidth
-        background={<Promotion src={promotionBG.childImageSharp} />}
+        background={
+          <Promotion fluidImage={promotionBG.childImageSharp.fluid} />
+        }
         contentPosition="bottom-center"
       >
         <Button type="button">Shop All Men</Button>
@@ -98,7 +100,9 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
       </Section>
       <Section>
         <Hero
-          background={<Promotion src={promotionBG.childImageSharp} />}
+          background={
+            <Promotion fluidImage={promotionBG.childImageSharp.fluid} />
+          }
           contentPosition="bottom-center"
           height="440px"
         >
