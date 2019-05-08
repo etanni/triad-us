@@ -13,6 +13,7 @@ import {
   ImageGridTwoHalfOneFullwidth,
   OneHalfChild,
   FullwidthChild,
+  useMedia,
 } from 'gatsby-theme-shopify-poulo';
 
 import ImageGridContent from '../components/ImageGridContent';
@@ -21,6 +22,7 @@ import { Promotion } from '../hero-bgs/Promotion';
 
 const Product = ({ data }) => {
   const [products] = useState(data.allShopifyProduct.edges);
+  const desktop = useMedia({ minWidth: 768 });
 
   return (
     <ProductPage data={data} scrollingLogo={ScrollLogo}>
@@ -46,24 +48,25 @@ const Product = ({ data }) => {
           </SectionDescription>
         </Hero>
       </Section>
-      <Section fullWidth>
+      <Section>
         <SectionSubTitle noMargin>
           With breathable Seamless construction, our Swiftly collection
           minimizes chafing, maximizes comfort.
         </SectionSubTitle>
       </Section>
       <Section fullWidth>
-        <ImageGridTwoHalfOneFullwidth rowHeight={400} fullWidth>
+        <ImageGridTwoHalfOneFullwidth rowHeight={desktop ? 400 : 300} fullWidth>
           <OneHalfChild background={`#efefef`}>
             <ImageGridContent
               color="black"
-              subTitle="The Secret of Triad"
+              title="The Secret of Triad"
               description="We wanted the most performant workout and life clothes on the market. We achieved this with Technology called Bioco."
             />
           </OneHalfChild>
           <OneHalfChild
             backgroundFluid={data.techImage.childImageSharp.fluid}
             backgroundAlt="Tech Image of Bioco"
+            hideOnMobile
           />
           <FullwidthChild
             backgroundFluid={data.fullwidthImage.childImageSharp.fluid}

@@ -21,12 +21,15 @@ export const Title = styled.span`
   display: block;
   margin-bottom: ${layout.spacing * 3}px;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1;
+  @media (min-width: 768px) {
+    font-size: 40px;
+  }
 `;
 export const SubTitle = styled.span`
   display: block;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 24px;
   @media (min-width: 768px) {
@@ -37,7 +40,7 @@ export const SubTitle = styled.span`
 export const Description = styled.span`
   display: block;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 24px;
   @media (min-width: 768px) {
     font-size: 20px;
