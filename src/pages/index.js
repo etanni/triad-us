@@ -33,6 +33,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
       transparentHeader={true}
       transparentLogo={WhiteLogo}
       scrollingLogo={ScrollLogo}
+      cartCountColor="#C10D28"
     >
       <Seo title="Home" />
       <Hero

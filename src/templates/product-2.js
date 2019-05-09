@@ -24,7 +24,7 @@ const Product = ({ data }) => {
   const [products] = useState(data.allShopifyProduct.edges);
 
   return (
-    <ProductPage data={data}>
+    <ProductPage data={data} cartCountColor="#C10D28">
       <Section>
         <EqualColumns background="#f2f2f2">
           <EqualColumn buttonText="More Infos">

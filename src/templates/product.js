@@ -25,7 +25,12 @@ const Product = ({ data }) => {
   const desktop = useMedia({ minWidth: 768 });
 
   return (
-    <ProductPage data={data} scrollingLogo={ScrollLogo}>
+    <ProductPage
+      data={data}
+      scrollingLogo={ScrollLogo}
+      buttonAppearance="primary"
+      cartCountColor="#C10D28"
+    >
       <Section>
         <EqualColumns background="#f2f2f2">
           <EqualColumn>NO SWEAT.</EqualColumn>
