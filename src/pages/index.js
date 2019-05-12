@@ -15,7 +15,7 @@ import {
 } from 'gatsby-theme-shopify-poulo';
 
 import ImageGridContent from '../components/ImageGridContent';
-import WhiteLogo from '../images/white-logo.png';
+import WhiteLogo from '../images/white-logo-circle.png';
 import ScrollLogo from '../images/scroll-logo.png';
 import LargeBG1 from '../images/large-bg-1.png';
 import LargeBG2 from '../images/large-bg-2.png';
