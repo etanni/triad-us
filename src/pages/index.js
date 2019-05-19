@@ -7,22 +7,22 @@ import {
   Seo,
   SectionTitle,
   Hero,
-  ImageGridTwoLargeFourSmall,
-  LargeChild,
-  SmallChild,
+  // ImageGridTwoLargeFourSmall,
+  // LargeChild,
+  // SmallChild,
   Button,
   PageLayout,
 } from 'gatsby-theme-shopify-poulo';
 
-import ImageGridContent from '../components/ImageGridContent';
+// import ImageGridContent from '../components/ImageGridContent';
 import WhiteLogo from '../images/white-logo-circle.png';
 import ScrollLogo from '../images/scroll-logo.png';
-import LargeBG1 from '../images/large-bg-1.png';
-import LargeBG2 from '../images/large-bg-2.png';
-import SmallBG1 from '../images/small-bg-1.png';
-import SmallBG2 from '../images/small-bg-2.png';
-import SmallBG3 from '../images/small-bg-3.png';
-import SmallBG4 from '../images/small-bg-4.png';
+// import LargeBG1 from '../images/large-bg-1.png';
+// import LargeBG2 from '../images/large-bg-2.png';
+// import SmallBG1 from '../images/small-bg-1.png';
+// import SmallBG2 from '../images/small-bg-2.png';
+// import SmallBG3 from '../images/small-bg-3.png';
+// import SmallBG4 from '../images/small-bg-4.png';
 import { Promotion } from '../hero-bgs/Promotion';
 
 export default ({ data: { promotionBG, allShopifyProduct } }) => {
@@ -45,13 +45,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
       >
         <Button type="button">Shop All Men</Button>
       </Hero>
-      <Section>
-        <ProductCardList
-          products={products}
-          handles={['100-nike', '101-nike', '102-wpn', '103-wpn']}
-        />
-      </Section>
-      <Section fullWidth>
+      {/* <Section fullWidth>
         <SectionTitle noDescription>
           With breathable Seamless construction, our Swiftly collection
           minimizes chafing, maximizes comfort.
@@ -92,8 +86,19 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
             background={`url(${SmallBG4}) center bottom/cover no-repeat`}
           />
         </ImageGridTwoLargeFourSmall>
-      </Section>
+      </Section> */}
       <Section>
+        <Hero
+          fullWidth
+          background={
+            <Promotion fluidImage={promotionBG.childImageSharp.fluid} />
+          }
+          contentPosition="center-center"
+          height="200px"
+          hasMargin
+        >
+          <SectionTitle noMargin>SHOP ACTIVE</SectionTitle>
+        </Hero>
         <ProductCardList
           products={products}
           handles={['100-nike', '101-nike', '102-wpn', '103-wpn']}
@@ -101,14 +106,20 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
       </Section>
       <Section>
         <Hero
+          fullWidth
           background={
             <Promotion fluidImage={promotionBG.childImageSharp.fluid} />
           }
-          contentPosition="bottom-center"
-          height="440px"
+          contentPosition="center-center"
+          height="200px"
+          hasMargin
         >
-          <Button type="button">Read Our Story</Button>
+          <SectionTitle noMargin>SHOP LIFE</SectionTitle>
         </Hero>
+        <ProductCardList
+          products={products}
+          handles={['100-nike', '101-nike', '102-wpn', '103-wpn']}
+        />
       </Section>
     </PageLayout>
   );
