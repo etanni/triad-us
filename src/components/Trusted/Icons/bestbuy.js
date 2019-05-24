@@ -8,12 +8,6 @@ export const Bestbuy = () => (
         fillRule="evenodd"
         clipRule="evenodd"
         fill="#fff"
-        d="M0 0h192.756v192.756H0V0z"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        fill="#fff"
         stroke="#272727"
         strokeWidth="2.791"
         strokeMiterlimit="2.613"
