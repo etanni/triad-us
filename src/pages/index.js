@@ -11,6 +11,7 @@ import {
   PageLayout,
 } from 'gatsby-theme-shopify-poulo';
 
+import { Trusted } from '../components/Trusted';
 import WhiteLogo from '../images/white-logo-circle.png';
 import ScrollLogo from '../images/scroll-logo.png';
 import { Promotion } from '../hero-bgs/Promotion';
@@ -35,6 +36,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
       >
         <Button type="button">Shop All Men</Button>
       </Hero>
+      <Trusted />
       <Section>
         <Hero
           fullWidth
