@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from '../styles';
 
 export const Bestbuy = () => (
-  <Icon style={{ padding: '8px 54px' }}>
+  <Icon>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.756 192.756">
       <path
         fillRule="evenodd"

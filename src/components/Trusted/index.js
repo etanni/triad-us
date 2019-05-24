@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Wrapper, TrustedTitle, TrustedIcons } from './styles';
+import { Wrapper, Title, TrustedIcons } from './styles';
 import { NFL } from './Icons/nfl';
 import { Porsche } from './Icons/porsche';
 import { CocaCola } from './Icons/coca';
@@ -17,7 +17,7 @@ import { Fila } from './Icons/fila';
 export const Trusted = () => {
   return (
     <Wrapper>
-      <TrustedTitle>Trusted By</TrustedTitle>
+      <Title>TRUSTED BY</Title>
       <TrustedIcons>
         <NFL />
         <Porsche />

@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from '../styles';
 
 export const Target = () => (
-  <Icon style={{ padding: '8px 76px' }}>
+  <Icon>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="20.822 38.459 390.356 497.082"

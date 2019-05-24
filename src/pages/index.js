@@ -6,6 +6,7 @@ import {
   Section,
   Seo,
   SectionTitle,
+  SectionSubTitle,
   Hero,
   Button,
   PageLayout,
@@ -48,6 +49,10 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
           hasMargin
         >
           <SectionTitle noMargin>SHOP ACTIVE</SectionTitle>
+          <SectionSubTitle noMargin>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </SectionSubTitle>
         </Hero>
         <ProductCardList
           products={products}
@@ -65,6 +70,10 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
           hasMargin
         >
           <SectionTitle noMargin>SHOP LIFE</SectionTitle>
+          <SectionSubTitle noMargin>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.
+          </SectionSubTitle>
         </Hero>
         <ProductCardList
           products={products}

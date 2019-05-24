@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from '../styles';
 
 export const Nascar = () => (
-  <Icon style={{ padding: '8px 48px' }}>
+  <Icon>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509.5 91.4">
       <path
         fill="currentColor"
