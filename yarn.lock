@@ -835,7 +835,7 @@
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.7.1.tgz#9833722341379fb7d67f06a4b00ab3c37913da53"
   integrity sha512-OYpa/Sg+2GDX+jibUfpZVn1YqSVRpYmTLF2eyAfrFTIJSbwyIrc+YscayoykvaOME/wV4BV0Sa0yqdMrgse6mA==
 
-"@emotion/is-prop-valid@0.7.3":
+"@emotion/is-prop-valid@0.7.3", "@emotion/is-prop-valid@^0.7.3":
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.7.3.tgz#a6bf4fa5387cbba59d44e698a4680f481a8da6cc"
   integrity sha512-uxJqm/sqwXw3YPA5GXX365OBcJGFtxUVkB6WyezqFHlNe9jqUWH5ur2O2M8dGBz61kn1g3ZBlzUunFQXQIClhA==
@@ -5043,12 +5043,13 @@ gatsby-source-shopify@^2.0.16:
     p-iteration "^1.1.7"
     prettyjson "^1.2.1"
 
-gatsby-theme-shopify-poulo@^0.6.9:
-  version "0.6.9"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.6.9.tgz#ba7a237cce2238e380cfc3ff7c951f5d692dcbba"
-  integrity sha512-kZkPfVohXZIKLii57eAELLslc2I6AkMT1KjP+o4VYmoWKT2Feug+YqenSUqTJ/2g+TZaTBjncLsSILrj9bffNg==
+gatsby-theme-shopify-poulo@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.7.1.tgz#e56e7dc1cf23168c03331e33b1c4e6f86782a476"
+  integrity sha512-BZB0/1OYKonR/Gpzq/Vj3dml6saI4q5vDOeCfAZfhJrzYlHsyvwVrEtn332h6Zkl65tyWyABO0/8d+eGZ1EKJA==
   dependencies:
     "@emotion/core" "^10.0.9"
+    "@emotion/is-prop-valid" "^0.7.3"
     "@emotion/styled" "^10.0.9"
     "@reach/router" "^1.2.1"
     algoliasearch "^3.32.1"

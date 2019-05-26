@@ -33,13 +33,14 @@ export const BottomFooter = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   background-color: #000000;
+  padding: 8px;
 `;
 
 export const FooterLink = styled(Link)`
   font-size: 15px;
   letter-spacing: 0.5px;
   line-height: 16px;
-  padding: 16px 12px;
+  padding: 8px 12px;
   color: white;
   text-decoration: none;
   appearance: none;
