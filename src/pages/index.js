@@ -88,7 +88,7 @@ export const query = graphql`
   query {
     promotionBG: file(relativePath: { eq: "large-bg-1.png" }) {
       childImageSharp {
-        fluid(sizes: "75vh") {
+        fluid(sizes: "75vh", quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
@@ -115,7 +115,7 @@ export const query = graphql`
           images {
             localFile {
               childImageSharp {
-                fixed(width: 500) {
+                fixed(width: 500, quality: 100) {
                   src
                 }
               }

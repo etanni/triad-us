@@ -77,7 +77,7 @@ const Product = ({ data }) => {
             <Promotion fluidImage={data.fullwidthImage.childImageSharp.fluid} />
           }
           contentPosition="center-left"
-          height="80vh"
+          height={desktop ? '80vh' : '50vh'}
           fullWidth
         >
           <SecondaryTitle as="h2" marginMultiplier={1}>
@@ -95,7 +95,7 @@ const Product = ({ data }) => {
             <Promotion fluidImage={data.fullwidthImage.childImageSharp.fluid} />
           }
           contentPosition="center-right"
-          height="80vh"
+          height={desktop ? '80vh' : '50vh'}
           fullWidth
         >
           <SecondaryTitle as="h2" marginMultiplier={1}>
@@ -113,7 +113,7 @@ const Product = ({ data }) => {
             <Promotion fluidImage={data.fullwidthImage.childImageSharp.fluid} />
           }
           contentPosition="bottom-center"
-          height="60vh"
+          height={desktop ? '60vh' : '50vh'}
           fullWidth
         >
           <SecondaryTitle as="h2" marginMultiplier={1}>
@@ -139,7 +139,7 @@ const Product = ({ data }) => {
             <Promotion fluidImage={data.promotionBG.childImageSharp.fluid} />
           }
           contentPosition="bottom-center"
-          height="75vh"
+          height={desktop ? '75vh' : '50vh'}
           fullWidth
         >
           <SecondaryTitle as="h2">Confidence Redefined</SecondaryTitle>
@@ -222,14 +222,14 @@ export const query = graphql`
   query($handle: String!) {
     fullwidthImage: file(relativePath: { eq: "large-bg-1.png" }) {
       childImageSharp {
-        fluid(sizes: "100vw") {
+        fluid(sizes: "100vw", quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
     promotionBG: file(relativePath: { eq: "large-bg-2.png" }) {
       childImageSharp {
-        fluid(sizes: "75vh") {
+        fluid(sizes: "100vw", quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
