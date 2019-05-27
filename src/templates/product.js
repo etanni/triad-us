@@ -41,36 +41,33 @@ const Product = ({ data }) => {
         <EqualColumns background="#f2f2f2">
           <EqualColumn>
             <SubTitle as="h2" marginMultiplier={1}>
-              Lorem ipsum dolor
+              FREE US SHIPPING {`&`} FREE 45 DAY RETURNS  
             </SubTitle>
             <Paragraph as="p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
+              Free shipping on all US orders when you spend more than $75 and free returns for up to 45 days.
             </Paragraph>
           </EqualColumn>
           <EqualColumn>
             <SubTitle as="h2" marginMultiplier={1}>
-              Lorem ipsum dolor
+              PROPRIETARY 3S TECHNOLOGY
             </SubTitle>
             <Paragraph as="p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
+              Everything we make features our No Sweat, No Stains, No Smell technology.
             </Paragraph>
           </EqualColumn>
           <EqualColumn>
             <SubTitle as="h2" marginMultiplier={1}>
-              Lorem ipsum dolor
+              CONFIDENCE GUARANTEE
             </SubTitle>
             <Paragraph as="p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
+              If you don't feel confident all day long, let us know and we'll make it right.
             </Paragraph>
           </EqualColumn>
         </EqualColumns>
       </Section>
       <Section fullWidth>
         <PrimaryTitle as="h2" marginMultiplier={10}>
-          OUR 3S-FORMULA
+          OUR 3S FORMULA
         </PrimaryTitle>
         <Hero
           background={
@@ -84,10 +81,12 @@ const Product = ({ data }) => {
             NO SWEAT.
           </SecondaryTitle>
           <SubTitle as="p">
-            When mess hits your Triad clothes like Coffee, soda, mustard, it
-            rolls off like magic leaving you looking fresh and stylish all day
-            long. No confidence lost. Your clothes stay as new as the day you
-            bought them.
+            Forget about embarrassing and confidence-killing sweat stains when 
+            going on a first date or traveling in Europe during summer. 
+            Our proprietary moisture-wicking technology on the inside absorbs sweat
+            and pushes it to the outside to evaporate 10x faster so you feel and look dry without 
+            leaving a stain. It's the perfect combination for looking cool and 
+            confident in any situation. We've got your back.
           </SubTitle>
         </Hero>
         <Hero
@@ -99,13 +98,13 @@ const Product = ({ data }) => {
           fullWidth
         >
           <SecondaryTitle as="h2" marginMultiplier={1}>
-            NO SMELL.
+            NO STAINS.
           </SecondaryTitle>
           <SubTitle as="p">
-            When mess hits your Triad clothes like Coffee, soda, mustard, it
-            rolls off like magic leaving you looking fresh and stylish all day
-            long. No confidence lost. Your clothes stay as new as the day you
-            bought them.
+            Never worry again about looking like a slob, even if you act like one.
+            Coffee, soda, mustard, bird poop, whatever life (or your clumsy self) throws at you. 
+            Our stain-proof tech causes them all to roll off like magic, leaving you looking fresh and stylish all day long. 
+            No confidence lost. 
           </SubTitle>
         </Hero>
         <Hero
@@ -117,13 +116,14 @@ const Product = ({ data }) => {
           fullWidth
         >
           <SecondaryTitle as="h2" marginMultiplier={1}>
-            NO STAINS.
+            NO SMELL.
           </SecondaryTitle>
           <SubTitle as="p">
-            When mess hits your Triad clothes like Coffee, soda, mustard, it
-            rolls off like magic leaving you looking fresh and stylish all day
-            long. No confidence lost. Your clothes stay as new as the day you
-            bought them.
+            No, it's not you. <br/>
+            Go straight from the gym to the grocery store without your clothes smelling like the dreaded locker room.
+            You can even wear your new favorite shirt over and over and over again without needing to wash it every time.
+            Our proprietary EPA-approved coconut-based technology eliminates manstink for good.
+            It will never wash out even after over 100 washes - the best in the industry. 
           </SubTitle>
         </Hero>
       </Section>
@@ -142,16 +142,32 @@ const Product = ({ data }) => {
           height={desktop ? '75vh' : '50vh'}
           fullWidth
         >
-          <SecondaryTitle as="h2">Confidence Redefined</SecondaryTitle>
-          <SubTitle as="h3">Style Redefined in this new collection</SubTitle>
+          <SecondaryTitle as="h2">ENGINEERED CONFIDENCE</SecondaryTitle>
+          <SubTitle as="h3">
+            The Thrive collection gives you the confidence to finally ask "the one" on that first date, 
+            rock the night sweat free at your local music venue, 
+            and scarf down your favorite juicy burger with the boys without worrying about the barbeque sauce that just dripped onto your chest.
+          </SubTitle>
         </Hero>
         <ImageGridTwoHalfOneFullwidth rowHeight={desktop ? 400 : 300} fullWidth>
           <OneHalfChild background="#e9e9e9">
             <ImageGridContent color="black" textAlign="left">
-              <SecondaryTitle as="h2">The Secret of Triad</SecondaryTitle>
+              <SecondaryTitle as="h2">ENVIRONMENT-FIRST TECHNOLOGY</SecondaryTitle>
               <Paragraph as="p">
-                We wanted the most performant workout and life clothes on the
-                market. We achieved this with Technology called Bioco.
+                3S tech is the only proven 99.9% effective antimicrobial on the market that is derived from natural ingredients 
+                (sustainable coconuts!). 
+                It never washes out and never leaches onto your skin. And unlike the environmentally harmful metals such as 
+                silver, gold, nanosilver (and the other 100 names that refer to the same thing), your conscience can be as 
+                clean as your clothes.
+              </Paragraph>
+              <Paragraph as="p">
+                <ul>
+                  <li>Safe</li>
+                  <li>Not harmful to pets or the environment</li>
+                  <li>Independant laboratory tested</li>
+                  <li>EPA approved</li>
+                  <li>Non-flammable</li>
+                </ul>
               </Paragraph>
             </ImageGridContent>
           </OneHalfChild>
@@ -166,10 +182,9 @@ const Product = ({ data }) => {
           >
             <ImageGridContent>
               <SubTitle as="p">
-                It allows our fabrics to kill any bacteria cells and therefore
-                eliminate all smell from your clothes no matter how often you
-                wear it. All of this, without using dangerous chemicals, that
-                endanger our environment.
+              A breakthrough in men's clothing. <br />
+              Engineered for confidence with a revolutionary proprietary technology that changes how men work, live, and train.<br/><br/>
+              Made to be free.
               </SubTitle>
             </ImageGridContent>
           </FullwidthChild>
@@ -194,10 +209,9 @@ const Product = ({ data }) => {
           <OneHalfChild background={`#e9e9e9`}>
             <ImageGridContent color="black" textAlign="left">
               <Paragraph as="p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                We started TRIAD by believing that we could change the way men think about clothing.
+                Our technology, our styles, and our fit were created to make men more confident at work, 
+                at the gym, and in daily life.
               </Paragraph>
             </ImageGridContent>
           </OneHalfChild>

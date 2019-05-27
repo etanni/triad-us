@@ -69,7 +69,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
           height="200px"
           hasMargin
         >
-          <SectionTitle noMargin>SHOP LIFE</SectionTitle>
+          <SectionTitle noMargin>SHOP LIVE</SectionTitle>
           <SectionSubTitle noMargin>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor.
