@@ -34,6 +34,9 @@ export const BottomFooter = styled.div`
   justify-content: center;
   background-color: #000000;
   padding: 8px;
+  @supports (-webkit-overflow-scrolling: touch) {
+    padding-bottom: 136px;
+  }
 `;
 
 export const FooterLink = styled(Link)`
