@@ -47,7 +47,7 @@ const Product = ({ data }) => {
       <Section>
         <ProductCardList
           products={products}
-          handles={['100-nike', '101-nike', '102-wpn', '103-wpn']}
+          handles={['thrive-tshirt', '101-nike', '102-wpn', '103-wpn']}
         />
       </Section>
       <Section fullWidth>

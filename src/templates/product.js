@@ -97,7 +97,7 @@ const Product = ({ data }) => {
             <Promotion fluidImage={data.nature.childImageSharp.fluid} />
           }
           contentPosition="center-right"
-          height={desktop ? '80vh' : '50vh'}
+          height={desktop ? '80vh' : '60vh'}
           fullWidth
         >
           <SecondaryTitle as="h2" marginMultiplier={1}>
@@ -116,7 +116,7 @@ const Product = ({ data }) => {
             <Promotion fluidImage={data.fullwidthImage.childImageSharp.fluid} />
           }
           contentPosition="bottom-center"
-          height={desktop ? '60vh' : '50vh'}
+          height={desktop ? '60vh' : '60vh'}
           fullWidth
         >
           <SecondaryTitle as="h2" marginMultiplier={1}>
@@ -145,7 +145,7 @@ const Product = ({ data }) => {
             <Promotion fluidImage={data.promotionBG.childImageSharp.fluid} />
           }
           contentPosition="bottom-center"
-          height={desktop ? '75vh' : '50vh'}
+          height={desktop ? '75vh' : '60vh'}
           fullWidth
         >
           <SecondaryTitle as="h2">ENGINEERED CONFIDENCE</SecondaryTitle>
@@ -214,7 +214,7 @@ const Product = ({ data }) => {
         </PrimaryTitle>
         <ProductCardList
           products={products}
-          handles={['100-nike', '101-nike', '102-wpn', '103-wpn']}
+          handles={['thrive-tshirt', '101-nike', '102-wpn', '103-wpn']}
         />
       </Section>
       <SectionNoTopPadding>
