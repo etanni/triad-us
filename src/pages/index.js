@@ -35,7 +35,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         contentPosition="bottom-center"
       >
         <PrimaryTitle as="h1" style={{ maxWidth: 500 }}>
-          WORK, TRAIN AND LIVE WITH CONFIDENCE
+          WORK, TRAIN AND LIVE CONFIDENT.
         </PrimaryTitle>
       </Hero>
       <Trusted />
