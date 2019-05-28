@@ -5,11 +5,10 @@ import {
   ProductCardList,
   Section,
   Seo,
-  SectionTitle,
-  SectionSubTitle,
   Hero,
-  Button,
   PageLayout,
+  PrimaryTitle,
+  SubTitle,
 } from 'gatsby-theme-shopify-poulo';
 
 import { Trusted } from '../components/Trusted';
@@ -35,7 +34,9 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         }
         contentPosition="bottom-center"
       >
-        <Button type="button">Shop All Men</Button>
+        <PrimaryTitle as="h1" style={{ maxWidth: 500 }}>
+          WORK, TRAIN AND LIVE WITH CONFIDENCE
+        </PrimaryTitle>
       </Hero>
       <Trusted />
       <Section>
@@ -48,11 +49,11 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
           height="200px"
           hasMargin
         >
-          <SectionTitle noMargin>SHOP ACTIVE</SectionTitle>
-          <SectionSubTitle noMargin>
+          <PrimaryTitle as="h2">SHOP ACTIVE</PrimaryTitle>
+          <SubTitle as="h3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor.
-          </SectionSubTitle>
+          </SubTitle>
         </Hero>
         <ProductCardList
           products={products}
@@ -69,11 +70,11 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
           height="200px"
           hasMargin
         >
-          <SectionTitle noMargin>SHOP LIVE</SectionTitle>
-          <SectionSubTitle noMargin>
+          <PrimaryTitle as="h2">SHOP LIVE</PrimaryTitle>
+          <SubTitle as="h3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor.
-          </SectionSubTitle>
+          </SubTitle>
         </Hero>
         <ProductCardList
           products={products}

@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { SectionTitle } from 'gatsby-theme-shopify-poulo';
 
 export const Wrapper = styled.section`
   width: 100%;
@@ -7,10 +6,6 @@ export const Wrapper = styled.section`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-`;
-
-export const Title = styled(SectionTitle)`
-  margin-bottom: 48px;
 `;
 
 export const TrustedIcons = styled.div`

@@ -1,6 +1,7 @@
 import React from 'react';
+import { PrimaryTitle } from 'gatsby-theme-shopify-poulo';
 
-import { Wrapper, Title, TrustedIcons } from './styles';
+import { Wrapper, TrustedIcons } from './styles';
 import { NFL } from './Icons/nfl';
 import { Porsche } from './Icons/porsche';
 import { CocaCola } from './Icons/coca';
@@ -17,7 +18,9 @@ import { Fila } from './Icons/fila';
 export const Trusted = () => {
   return (
     <Wrapper>
-      <Title>TRUSTED BY</Title>
+      <PrimaryTitle as="h2" marginMultiplier={6}>
+        TRUSTED BY
+      </PrimaryTitle>
       <TrustedIcons>
         <NFL />
         <Porsche />
