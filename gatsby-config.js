@@ -59,6 +59,7 @@ module.exports = {
   ],
   siteMetadata: {
     title: 'Triad - Made to be free',
+    siteUrl: 'https://weartriad.com',
     description:
       'Triad is quality fashion with high-tech performance at accessible prices. Modern design, all-week performance, and industry-leading technology. Triad is the lifestyle brand for people made to be free.',
     author: '@weartriad',
