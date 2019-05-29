@@ -41,7 +41,7 @@ const Product = ({ data }) => {
         <EqualColumns background="#f2f2f2">
           <EqualColumn>
             <SubTitle as="h2" marginMultiplier={1}>
-              FREE US SHIPPING {`&`} FREE 45 DAY RETURNS
+              FREE US SHIPPING & FREE 45 DAY RETURNS
             </SubTitle>
             <Paragraph as="p">
               Free shipping on all US orders when you spend more than $75 and

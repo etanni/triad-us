@@ -32,7 +32,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         background={
           <Promotion fluidImage={promotionBG.childImageSharp.fluid} />
         }
-        contentPosition="middle-center"
+        contentPosition="center-center"
       >
         <PrimaryTitle as="h1" style={{ maxWidth: 500 }}>
           WORK, TRAIN AND LIVE CONFIDENT.
@@ -51,8 +51,8 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         >
           <PrimaryTitle as="h2">SHOP ACTIVE</PrimaryTitle>
           <SubTitle as="h3">
-          Expertly engineered with lightweight design, tailored fit, 
-          and all-week performance to push you through every workout.
+            Expertly engineered with lightweight design, tailored fit, and
+            all-week performance to push you through every workout.
           </SubTitle>
         </Hero>
         <ProductCardList
@@ -72,8 +72,8 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         >
           <PrimaryTitle as="h2">SHOP LIVE</PrimaryTitle>
           <SubTitle as="h3">
-          Your everyday look designed for maximum comfort and 
-          ready-for-anything performance.
+            Your everyday look designed for maximum comfort and
+            ready-for-anything performance.
           </SubTitle>
         </Hero>
         <ProductCardList
