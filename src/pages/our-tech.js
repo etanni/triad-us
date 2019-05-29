@@ -26,7 +26,10 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
       scrollingLogo={ScrollLogo}
       cartCountColor="#C10D28"
     >
-      <Seo />
+      <Seo
+        title="Our Tech"
+        description="The Tech we apply on our clothes is one of a kind. It is licensed and makes sure that you can work, train and live without worrying about sweat, smell and stains."
+      />
       <Hero
         fullWidth
         background={

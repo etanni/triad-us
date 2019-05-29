@@ -26,7 +26,10 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
       scrollingLogo={ScrollLogo}
       cartCountColor="#C10D28"
     >
-      <Seo />
+      <Seo
+        title="Our Story"
+        description="Our Story is a unique one. Started in the warm weather of Puerto Rico, all the way to Budapest Hungary. What unites us is the wish for better clothes, that make us free."
+      />
       <Hero
         fullWidth
         background={

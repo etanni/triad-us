@@ -9,8 +9,8 @@ module.exports = {
         navigation: {
           menu: [
             {
-              link: '/tops',
-              displayName: 'Tops',
+              link: '/our-story',
+              displayName: 'Our Story',
               subMenu: [
                 {
                   link: '',
@@ -19,28 +19,14 @@ module.exports = {
               ],
             },
             {
-              link: '/bottoms',
-              displayName: 'Bottoms',
+              link: '/our-tech',
+              displayName: 'Our Tech',
               subMenu: [
                 {
                   link: '',
                   displayName: '',
                 },
               ],
-            },
-            {
-              link: '/collections',
-              displayName: 'Shop',
-              subMenu: [
-                {
-                  link: '',
-                  displayName: '',
-                },
-              ],
-            },
-            {
-              link: '/about-us',
-              displayName: 'About Us',
             },
           ],
         },

@@ -24,7 +24,10 @@ import IconGrid from '../components/IconGrid';
 import ScrollLogo from '../images/scroll-logo.png';
 import { Promotion } from '../hero-bgs/Promotion';
 
-import { SectionNoBottomPadding, SectionNoTopPadding } from '../styles';
+import {
+  SectionNoBottomPadding,
+  // SectionNoTopPadding
+} from '../styles';
 
 const Product = ({ data }) => {
   const [products] = useState(data.allShopifyProduct.edges);
@@ -217,11 +220,11 @@ const Product = ({ data }) => {
           handles={['thrive-tshirt', '101-nike', '102-wpn', '103-wpn']}
         />
       </Section>
-      <SectionNoTopPadding>
+      {/* <SectionNoTopPadding>
         <ButtonLink to="/collections" appearance="hollow">
           Shop new arrivals
         </ButtonLink>
-      </SectionNoTopPadding>
+      </SectionNoTopPadding> */}
       <Section fullWidth>
         <ImageGridTwoHalf>
           <OneHalfChild background={`#e9e9e9`}>
@@ -240,9 +243,9 @@ const Product = ({ data }) => {
           >
             <ImageGridContent>
               <PrimaryTitle as="h2" marginMultiplier={2}>
-                ABOUT US
+                OUR STORY
               </PrimaryTitle>
-              <ButtonLink to="/about-us">Read More</ButtonLink>
+              <ButtonLink to="/our-story">Read More</ButtonLink>
             </ImageGridContent>
           </OneHalfChild>
         </ImageGridTwoHalf>
