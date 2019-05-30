@@ -3,7 +3,11 @@ import { Icon } from '../styles';
 
 export const Nascar = () => (
   <Icon>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509.5 91.4">
+    <svg
+      width="110"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 509.5 91.4"
+    >
       <path
         fill="currentColor"
         d="M129.7 0l-20.2 91.4H127L147.1 0h-17.4zM152 0l-20.2 91.4h72.3L243 0h-91z"

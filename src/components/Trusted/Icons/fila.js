@@ -4,6 +4,7 @@ import { Icon } from '../styles';
 export const Fila = () => (
   <Icon>
     <svg
+      width="100"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="6.797 10.88 618.977 209.32"
     >

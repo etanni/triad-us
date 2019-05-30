@@ -3,7 +3,11 @@ import { Icon } from '../styles';
 
 export const Pepsi = () => (
   <Icon>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288.457 109.843">
+    <svg
+      width="110"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 288.457 109.843"
+    >
       <path
         d="M54.9 109.343c-29.996 0-54.4-24.414-54.4-54.42C.5 24.914 24.904.501 54.9.501c29.995 0 54.398 24.414 54.398 54.422 0 30.006-24.403 54.42-54.398 54.42z"
         fill="#fff"

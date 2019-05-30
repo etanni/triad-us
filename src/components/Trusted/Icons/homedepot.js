@@ -3,7 +3,11 @@ import { Icon } from '../styles';
 
 export const HomeDepot = () => (
   <Icon>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.756 192.756">
+    <svg
+      width="88"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 192.756 192.756"
+    >
       <g fillRule="evenodd" clipRule="evenodd">
         <path d="M8.504 8.504h175.748v175.748H8.504V8.504z" />
         <path

@@ -15,6 +15,7 @@ import { Trusted } from '../components/Trusted';
 import WhiteLogo from '../images/white-logo-circle.png';
 import ScrollLogo from '../images/scroll-logo.png';
 import { Promotion } from '../hero-bgs/Promotion';
+import ThreeSFormula from '../components/ThreeSFormula';
 
 export default ({ data: { promotionBG, allShopifyProduct } }) => {
   const [products] = useState(allShopifyProduct.edges);
@@ -39,6 +40,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         </PrimaryTitle>
       </Hero>
       <Trusted />
+      <ThreeSFormula />
       <Section>
         <Hero
           fullWidth

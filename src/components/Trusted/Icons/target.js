@@ -4,6 +4,7 @@ import { Icon } from '../styles';
 export const Target = () => (
   <Icon>
     <svg
+      width="75"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="20.822 38.459 390.356 497.082"
     >
