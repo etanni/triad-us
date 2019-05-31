@@ -7,8 +7,10 @@ import {
   Seo,
   Hero,
   PageLayout,
+  Paragraph,
   PrimaryTitle,
   SubTitle,
+  SecondaryTitle,
 } from 'gatsby-theme-shopify-poulo';
 
 import { Trusted } from '../components/Trusted';
@@ -39,6 +41,15 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
           WORK, TRAIN AND LIVE CONFIDENT.
         </PrimaryTitle>
       </Hero>
+      <Section>
+        <SecondaryTitle>Go ahead, get dirty.</SecondaryTitle>
+        <Paragraph as="h1">
+        Eat a California burrito. Enjoy that Cabernet. 
+        Take a run during your lunch break. 
+        Life is meant to be enjoyed. Don't let your clothes hold you back. 
+        Live confident.
+        </Paragraph>
+      </Section>
       <Trusted />
       <ThreeSFormula />
       <Section>

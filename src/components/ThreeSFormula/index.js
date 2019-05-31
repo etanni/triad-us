@@ -44,6 +44,9 @@ const ThreeSFormula = () => {
     <Section fullWidth={!desktop}>
       <PrimaryTitle as="h2" marginMultiplier={desktop ? 10 : 6}>
         OUR 3S FORMULA
+        <SecondaryTitle as="h3" color="black">
+          NO SWEAT. NO STINK. NO STAINS.
+        </SecondaryTitle>
       </PrimaryTitle>
       <CardWrapper>
         <Card>
@@ -54,11 +57,11 @@ const ThreeSFormula = () => {
           />
           <CardContent>
             <SecondaryTitle as="h3" color="white" marginMultiplier={1}>
-              NO SWEAT.
+              DON'T SWEAT IT.
             </SecondaryTitle>
             <Paragraph as="p" color="white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
+            Our moisture-wicking technology absorbs 
+            and evaporates sweat up to 10x faster without leaving a visible sweat stain.
             </Paragraph>
           </CardContent>
         </Card>
@@ -70,11 +73,13 @@ const ThreeSFormula = () => {
           />
           <CardContent>
             <SecondaryTitle as="h3" color="white" marginMultiplier={1}>
-              NO SMELL.
+              NO SNIFF TEST.
             </SecondaryTitle>
             <Paragraph as="p" color="white" marginMultiplier={tablet ? 3 : 0}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
+              Wear your clothes all week before doing 
+              laundry. We spent 10 years developing the world's only 
+              permanent all-natural anti-odor technology that eliminates manstink 
+              for good.
             </Paragraph>
             {tablet ? (
               <Button as={Link} to="/our-tech">
@@ -91,11 +96,12 @@ const ThreeSFormula = () => {
           />
           <CardContent>
             <SecondaryTitle as="h3" color="white" marginMultiplier={1}>
-              NO STAINS.
+              HOT SAUCE FRIENDLY.
             </SecondaryTitle>
             <Paragraph as="p" color="white" marginMultiplier={tablet ? 0 : 3}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
+            Eat and drink what you want, when you want. Coffee, mustard, burger 
+            juice, whatever life throws at you — our stain-proof tech resists 
+            them all, leaving you looking fresh and stylish all day long.
             </Paragraph>
             {!tablet ? (
               <Button as={Link} to="/our-tech">
