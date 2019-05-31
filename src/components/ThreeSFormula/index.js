@@ -44,7 +44,7 @@ const ThreeSFormula = () => {
     <Section fullWidth={!desktop}>
       <PrimaryTitle as="h2" marginMultiplier={desktop ? 10 : 6}>
         OUR 3S FORMULA
-        <SecondaryTitle as="h3" color="black">
+        <SecondaryTitle as="h4" color="black">
           NO SWEAT. NO STINK. NO STAINS.
         </SecondaryTitle>
       </PrimaryTitle>

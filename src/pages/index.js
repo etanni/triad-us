@@ -38,7 +38,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         contentPosition="center-center"
       >
         <PrimaryTitle as="h1" style={{ maxWidth: 500 }}>
-          WORK, TRAIN AND LIVE CONFIDENT.
+          LIVE CONFIDENT.
         </PrimaryTitle>
       </Hero>
       <Section>
@@ -64,8 +64,8 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         >
           <PrimaryTitle as="h2">SHOP ACTIVE</PrimaryTitle>
           <SubTitle as="h3">
-            Expertly engineered with lightweight design, tailored fit, and
-            all-week performance to push you through every workout.
+            Expertly engineered with lightweight design, the perfect fit, and
+            all-week performance to empower your active lifestyle.
           </SubTitle>
         </Hero>
         <ProductCardList
@@ -85,7 +85,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         >
           <PrimaryTitle as="h2">SHOP LIVE</PrimaryTitle>
           <SubTitle as="h3">
-            Your everyday look designed for maximum comfort and
+            Your everyday look designed for maximum comfort but
             ready-for-anything performance.
           </SubTitle>
         </Hero>
