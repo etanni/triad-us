@@ -44,7 +44,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
       <Section>
         <SecondaryTitle>Go ahead, get dirty.</SecondaryTitle>
         <Paragraph as="h1">
-        Eat a California burrito. Enjoy that Cabernet. 
+        Eat a California burrito. Enjoy that IPA. 
         Take a run during your lunch break. 
         Life is meant to be enjoyed. Don't let your clothes hold you back. 
         Live confident.
