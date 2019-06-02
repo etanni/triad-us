@@ -99,9 +99,10 @@ const ThreeSFormula = () => {
               HOT SAUCE FRIENDLY.
             </SecondaryTitle>
             <Paragraph as="p" color="white" marginMultiplier={tablet ? 0 : 3}>
-            Eat and drink what you want, when you want. Coffee, wine, burrito
-            juice, whatever you put it in your face — our stain-proof tech resists 
-            them all, leaving you looking fresh and stylish all day long.
+            Eat and drink what you want, when you want. A Big-Gulp Blue Slushie, 
+            a California burrito, or a third glass of Merlot. Whatever you put 
+            it in your face — our stain-proof tech resists them all, leaving you 
+            looking fresh and stylish all day long.
             </Paragraph>
             {!tablet ? (
               <Button as={Link} to="/our-tech">
