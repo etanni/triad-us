@@ -22,7 +22,7 @@ export const Card = styled.div`
 `;
 export const CardImage = styled(Img)`
   mix-blend-mode: multiply;
-  filter: grayscale(50%);
+  filter: grayscale(10%);
   height: 100%;
   width: 100%;
 `;

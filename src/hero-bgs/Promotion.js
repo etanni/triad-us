@@ -12,7 +12,7 @@ const PromotionWrapper = styled.div`
 `;
 const PromotionImage = styled(Img)`
   mix-blend-mode: multiply;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   height: 100%;
   width: 100%;
   /* object-fit: cover;

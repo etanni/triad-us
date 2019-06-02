@@ -14,21 +14,21 @@ import { CardWrapper, Card, CardImage, CardContent } from './styles';
 const ThreeSFormula = () => {
   const { sweat, smell, stains } = useStaticQuery(graphql`
     query {
-      sweat: file(relativePath: { eq: "sweat.jpeg" }) {
+      sweat: file(relativePath: { eq: "treadmill-sample.jpg" }) {
         childImageSharp {
           fluid(sizes: "70vh", quality: 100) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
-      smell: file(relativePath: { eq: "smell.jpeg" }) {
+      smell: file(relativePath: { eq: "pool-sample.jpg" }) {
         childImageSharp {
           fluid(sizes: "70vh", quality: 100) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
-      stains: file(relativePath: { eq: "stains.jpeg" }) {
+      stains: file(relativePath: { eq: "beach-sample.jpg" }) {
         childImageSharp {
           fluid(sizes: "70vh", quality: 100) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG

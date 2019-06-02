@@ -35,7 +35,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         background={
           <Promotion fluidImage={promotionBG.childImageSharp.fluid} />
         }
-        contentPosition="center-center"
+        contentPosition="bottom-center"
       >
         <PrimaryTitle as="h1" style={{ maxWidth: 500 }}>
           LIVE CONFIDENT.
@@ -50,8 +50,8 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         Live confident.
         </Paragraph>
       </Section>
-      <Trusted />
       <ThreeSFormula />
+      <Trusted />
       <Section>
         <Hero
           fullWidth
@@ -100,7 +100,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
 
 export const query = graphql`
   query {
-    promotionBG: file(relativePath: { eq: "large-bg-1.png" }) {
+    promotionBG: file(relativePath: { eq: "police-sample.jpg" }) {
       childImageSharp {
         fluid(sizes: "75vh", quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
