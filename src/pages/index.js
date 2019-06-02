@@ -44,10 +44,11 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
       <Section>
         <SecondaryTitle>Go ahead, get dirty.</SecondaryTitle>
         <Paragraph as="h1">
-        Eat a California burrito. Enjoy that IPA. 
-        Take a run during your lunch break. 
-        Life is meant to be enjoyed. Don't let your clothes hold you back. 
-        Live confident.
+          Take ths stairs.
+          Skip laundry day.
+          Chug that IPA.
+          Life is meant to be enjoyed -- don't let clothes get in your way. 
+          Live confident.
         </Paragraph>
       </Section>
       <ThreeSFormula />
@@ -62,10 +63,10 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
           height="200px"
           hasMargin
         >
-          <PrimaryTitle as="h2">SHOP ACTIVE</PrimaryTitle>
+          <PrimaryTitle as="h2">GET ACTIVE</PrimaryTitle>
           <SubTitle as="h3">
             Expertly engineered with lightweight design, the perfect fit, and
-            all-week performance to empower your active lifestyle.
+            all-week performance so you can win a 5k -- or just hit 20 push-ups.
           </SubTitle>
         </Hero>
         <ProductCardList
@@ -83,9 +84,9 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
           height="200px"
           hasMargin
         >
-          <PrimaryTitle as="h2">SHOP LIVE</PrimaryTitle>
+          <PrimaryTitle as="h2">GO LIVE</PrimaryTitle>
           <SubTitle as="h3">
-            Your everyday look designed for maximum comfort but
+            Your everyday, damn-I-look-good style designed for maximum comfort and
             ready-for-anything performance.
           </SubTitle>
         </Hero>

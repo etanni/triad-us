@@ -73,7 +73,7 @@ const ThreeSFormula = () => {
           />
           <CardContent>
             <SecondaryTitle as="h3" color="white" marginMultiplier={1}>
-              NO SNIFF TEST.
+              SNIFF TEST APPROVED.
             </SecondaryTitle>
             <Paragraph as="p" color="white" marginMultiplier={tablet ? 3 : 0}>
               Wear your clothes all week before doing 
@@ -99,8 +99,8 @@ const ThreeSFormula = () => {
               HOT SAUCE FRIENDLY.
             </SecondaryTitle>
             <Paragraph as="p" color="white" marginMultiplier={tablet ? 0 : 3}>
-            Eat and drink what you want, when you want. Coffee, mustard, burger 
-            juice, whatever life throws at you — our stain-proof tech resists 
+            Eat and drink what you want, when you want. Coffee, wine, burrito
+            juice, whatever you put it in your face — our stain-proof tech resists 
             them all, leaving you looking fresh and stylish all day long.
             </Paragraph>
             {!tablet ? (
