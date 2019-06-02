@@ -17,6 +17,7 @@ import { Trusted } from '../components/Trusted';
 import WhiteLogo from '../images/white-logo-circle.png';
 import ScrollLogo from '../images/scroll-logo.png';
 import { Promotion } from '../hero-bgs/Promotion';
+import { HeroImage } from '../hero-bgs/HeroImage';
 import ThreeSFormula from '../components/ThreeSFormula';
 
 export default ({ data: { promotionBG, allShopifyProduct } }) => {
@@ -42,13 +43,10 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         </PrimaryTitle>
       </Hero>
       <Section>
-        <SecondaryTitle>Go ahead, get dirty.</SecondaryTitle>
-        <Paragraph as="h1">
-          Take the stairs.
-          Skip laundry day.
-          Chug that IPA.
-          Life is meant to be enjoyed -- don't let clothes get in your way. 
-          Live confident.
+        <SecondaryTitle as="h2">Go ahead, get dirty.</SecondaryTitle>
+        <Paragraph as="p">
+          Take the stairs. Skip laundry day. Chug that IPA. Life is meant to be
+          enjoyed -- don't let clothes get in your way. Live confident.
         </Paragraph>
       </Section>
       <ThreeSFormula />
@@ -57,7 +55,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         <Hero
           fullWidth
           background={
-            <Promotion fluidImage={promotionBG.childImageSharp.fluid} />
+            <HeroImage fluidImage={promotionBG.childImageSharp.fluid} />
           }
           contentPosition="center-center"
           height="200px"
@@ -78,7 +76,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         <Hero
           fullWidth
           background={
-            <Promotion fluidImage={promotionBG.childImageSharp.fluid} />
+            <HeroImage fluidImage={promotionBG.childImageSharp.fluid} />
           }
           contentPosition="center-center"
           height="200px"
@@ -86,8 +84,8 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
         >
           <PrimaryTitle as="h2">GO LIVE</PrimaryTitle>
           <SubTitle as="h3">
-            Your everyday, damn-I-look-good style designed for maximum comfort and
-            ready-for-anything performance.
+            Your everyday, damn-I-look-good style designed for maximum comfort
+            and ready-for-anything performance.
           </SubTitle>
         </Hero>
         <ProductCardList

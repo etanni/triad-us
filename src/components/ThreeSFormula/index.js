@@ -42,12 +42,12 @@ const ThreeSFormula = () => {
 
   return (
     <Section fullWidth={!desktop}>
-      <PrimaryTitle as="h2" marginMultiplier={desktop ? 10 : 6}>
+      <PrimaryTitle as="h2" marginMultiplier={1}>
         OUR 3S FORMULA
-        <SecondaryTitle as="h4" color="black">
-          NO SWEAT. NO STINK. NO STAINS.
-        </SecondaryTitle>
       </PrimaryTitle>
+      <SecondaryTitle as="h3" color="black" marginMultiplier={desktop ? 10 : 6}>
+        NO SWEAT. NO STINK. NO STAINS.
+      </SecondaryTitle>
       <CardWrapper>
         <Card>
           <CardImage
@@ -60,8 +60,8 @@ const ThreeSFormula = () => {
               DON'T SWEAT IT.
             </SecondaryTitle>
             <Paragraph as="p" color="white">
-            Our moisture-wicking technology absorbs 
-            and evaporates sweat up to 10x faster without leaving a visible sweat stain.
+              Our moisture-wicking technology absorbs and evaporates sweat up to
+              10x faster without leaving a visible sweat stain.
             </Paragraph>
           </CardContent>
         </Card>
@@ -76,10 +76,9 @@ const ThreeSFormula = () => {
               SNIFF TEST APPROVED.
             </SecondaryTitle>
             <Paragraph as="p" color="white" marginMultiplier={tablet ? 3 : 0}>
-              Wear your clothes all week before doing 
-              laundry. We spent 10 years developing the world's only 
-              permanent all-natural anti-odor technology that eliminates manstink 
-              for good.
+              Wear your clothes all week before doing laundry. We spent 10 years
+              developing the world's only permanent all-natural anti-odor
+              technology that eliminates manstink for good.
             </Paragraph>
             {tablet ? (
               <Button as={Link} to="/our-tech">
@@ -99,10 +98,10 @@ const ThreeSFormula = () => {
               HOT SAUCE FRIENDLY.
             </SecondaryTitle>
             <Paragraph as="p" color="white" marginMultiplier={tablet ? 0 : 3}>
-            Eat and drink what you want, when you want. A Big-Gulp Blue Slushie, 
-            a California burrito, or a third glass of Merlot. Whatever you put 
-            it in your face — our stain-proof tech resists them all, leaving you 
-            looking fresh and stylish all day long.
+              Eat and drink what you want, when you want. A Big-Gulp Blue
+              Slushie, a California burrito, or a third glass of Merlot.
+              Whatever you put it in your face — our stain-proof tech resists
+              them all, leaving you looking fresh and stylish all day long.
             </Paragraph>
             {!tablet ? (
               <Button as={Link} to="/our-tech">
