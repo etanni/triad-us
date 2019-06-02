@@ -44,7 +44,7 @@ export default ({ data: { promotionBG, allShopifyProduct } }) => {
       <Section>
         <SecondaryTitle>Go ahead, get dirty.</SecondaryTitle>
         <Paragraph as="h1">
-          Take ths stairs.
+          Take the stairs.
           Skip laundry day.
           Chug that IPA.
           Life is meant to be enjoyed -- don't let clothes get in your way. 
