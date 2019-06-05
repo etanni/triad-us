@@ -77,7 +77,7 @@ const Product = ({ data }) => {
         </PrimaryTitle>
         <Hero
           background={
-            <Promotion fluidImage={data.fullwidthImage.childImageSharp.fluid} />
+            <Promotion fluidImage={data.noSweatImage.childImageSharp.fluid} />
           }
           contentPosition="center-left"
           height={desktop ? '80vh' : '50vh'}
@@ -97,7 +97,7 @@ const Product = ({ data }) => {
         </Hero>
         <Hero
           background={
-            <Promotion fluidImage={data.nature.childImageSharp.fluid} />
+            <Promotion fluidImage={data.noStainImage.childImageSharp.fluid} />
           }
           contentPosition="center-right"
           height={desktop ? '80vh' : '60vh'}
@@ -116,7 +116,7 @@ const Product = ({ data }) => {
         </Hero>
         <Hero
           background={
-            <Promotion fluidImage={data.fullwidthImage.childImageSharp.fluid} />
+            <Promotion fluidImage={data.noSmellImage.childImageSharp.fluid} />
           }
           contentPosition="bottom-center"
           height={desktop ? '60vh' : '60vh'}
@@ -145,7 +145,7 @@ const Product = ({ data }) => {
       <SectionNoBottomPadding fullWidth>
         <Hero
           background={
-            <Promotion fluidImage={data.promotionBG.childImageSharp.fluid} />
+            <Promotion fluidImage={data.nature.childImageSharp.fluid} />
           }
           contentPosition="bottom-center"
           height={desktop ? '75vh' : '60vh'}
@@ -194,7 +194,7 @@ const Product = ({ data }) => {
             hideOnMobile
           />
           <FullwidthChild
-            backgroundFluid={data.nature.childImageSharp.fluid}
+            backgroundFluid={data.beachSample.childImageSharp.fluid}
             backgroundAlt="Man Working Out"
             backgroundImgStyle={{ objectPosition: 'center center' }}
           >
@@ -238,7 +238,7 @@ const Product = ({ data }) => {
             </ImageGridContent>
           </OneHalfChild>
           <OneHalfChild
-            backgroundFluid={data.promotionBG.childImageSharp.fluid}
+            backgroundFluid={data.guitarSample.childImageSharp.fluid}
             backgroundAlt="Tech Image of Bioco"
           >
             <ImageGridContent>
@@ -256,14 +256,21 @@ const Product = ({ data }) => {
 
 export const query = graphql`
   query($handle: String!) {
-    fullwidthImage: file(relativePath: { eq: "large-bg-1.png" }) {
+    noSweatImage: file(relativePath: { eq: "on_that_ass_no_sweat.jpg" }) {
       childImageSharp {
         fluid(sizes: "100vw", quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
     }
-    promotionBG: file(relativePath: { eq: "large-bg-2.png" }) {
+    noSmellImage: file(relativePath: { eq: "on_that_ass_no_smell.jpg" }) {
+      childImageSharp {
+        fluid(sizes: "100vw", quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    noStainImage: file(relativePath: { eq: "on_that_ass_no_stains.jpg" }) {
       childImageSharp {
         fluid(sizes: "100vw", quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -277,9 +284,23 @@ export const query = graphql`
         }
       }
     }
-    nature: file(relativePath: { eq: "nature.jpeg" }) {
+    nature: file(relativePath: { eq: "on_that_ass_engineered_confidence.jpg" }) {
       childImageSharp {
         fluid(sizes: "100vw", quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    beachSample: file(relativePath: { eq: "beach-sample.jpg" }) {
+      childImageSharp {
+        fluid(sizes: "50vw") {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    guitarSample: file(relativePath: { eq: "guitar-sample.jpg" }) {
+      childImageSharp {
+        fluid(sizes: "50vw") {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }
