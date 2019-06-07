@@ -9,6 +9,10 @@ module.exports = {
         navigation: {
           menu: [
             {
+              type: 'megamenu',
+              displayName: 'Shop',
+            },
+            {
               link: '/our-story',
               displayName: 'Our Story',
               subMenu: [
