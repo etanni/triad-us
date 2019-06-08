@@ -15,22 +15,10 @@ module.exports = {
             {
               link: '/our-story',
               displayName: 'Our Story',
-              subMenu: [
-                {
-                  link: '',
-                  displayName: '',
-                },
-              ],
             },
             {
               link: '/our-tech',
               displayName: 'Our Tech',
-              subMenu: [
-                {
-                  link: '',
-                  displayName: '',
-                },
-              ],
             },
           ],
         },
