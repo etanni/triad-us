@@ -5086,10 +5086,10 @@ gatsby-telemetry@^1.0.11:
     stack-utils "1.0.2"
     uuid "3.3.2"
 
-gatsby-theme-shopify-poulo@^0.8.10:
-  version "0.8.10"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.8.10.tgz#524e118dd663721de469eba31cdb4c6e275294cd"
-  integrity sha512-wDZqAuxXDKZyZgo0LXXc1DQKxS8gNAjP2UnrvcyNIYAeH3ZRL2d2QsL4Sc907L1Ttc23Uh1KS+ItL74K+8qbsg==
+gatsby-theme-shopify-poulo@^0.8.11:
+  version "0.8.11"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.8.11.tgz#aef9b280bb2d9c7d9ef28f083b43b4956e535e2a"
+  integrity sha512-dRgubw7gJhKxcLYwrAekHefW1zrUfw6EbVtQBQyTm816TyovdfYndg5TX+eDUsqlP1pROexQXHskIUx1Nv1bpQ==
   dependencies:
     "@emotion/core" "^10.0.10"
     "@emotion/is-prop-valid" "^0.7.3"

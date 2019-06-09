@@ -116,7 +116,7 @@ export const query = graphql`
           images {
             localFile {
               childImageSharp {
-                fixed(width: 500) {
+                fixed(width: 450) {
                   src
                 }
               }
