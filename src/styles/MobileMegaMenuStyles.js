@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Paragraph, PrimaryTitle } from 'gatsby-theme-shopify-poulo';
+// import { Paragraph, PrimaryTitle } from 'gatsby-theme-shopify-poulo';
 import { Link } from 'gatsby';
 
 export const Wrapper = styled.div`
@@ -31,10 +31,21 @@ export const Category = styled.div`
     }
   }
 `;
-export const Title = styled(PrimaryTitle)`
-  max-width: initial;
-  margin-left: 12px;
+export const Title = styled.span`
+  width: 100%;
+  display: block;
+  font-size: 30px;
+  line-height: 48px;
+  font-weight: 900;
   text-align: left;
+  margin-bottom: ${({ marginMultiplier }) =>
+    marginMultiplier ? 8 * marginMultiplier : 0}px;
+  color: black;
+  margin-left: 12px;
+  @media (min-width: 768px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
 `;
 
 export const ProductWrapper = styled(Link)`
@@ -47,7 +58,16 @@ export const ProductImage = styled.img`
   margin: 0;
   object-fit: cover;
 `;
-export const ProductTitle = styled(Paragraph)`
+export const ProductTitle = styled.span`
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: ${({ marginMultiplier }) =>
+    marginMultiplier ? 8 * marginMultiplier : 0}px;
+  color: black;
   font-weight: 600;
 `;
 

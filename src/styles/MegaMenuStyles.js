@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { SecondaryTitle, Paragraph } from 'gatsby-theme-shopify-poulo';
+// import { SecondaryTitle, Paragraph } from 'gatsby-theme-shopify-poulo';
 import { Link } from 'gatsby';
 
 export const Wrapper = styled.div`
@@ -25,9 +25,20 @@ export const Category = styled.div`
   display: flex;
   flex-wrap: wrap;
 `;
-export const Title = styled(SecondaryTitle)`
-  max-width: initial;
+export const Title = styled.span`
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: bold;
+  margin-bottom: ${({ marginMultiplier }) =>
+    marginMultiplier ? 8 * marginMultiplier : 0}px;
+  color: black;
   margin-left: 12px;
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 48px;
+  }
 `;
 
 export const ProductWrapper = styled(Link)`
@@ -40,7 +51,16 @@ export const ProductImage = styled.img`
   margin: 0;
   object-fit: cover;
 `;
-export const ProductTitle = styled(Paragraph)`
+export const ProductTitle = styled.span`
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: ${({ marginMultiplier }) =>
+    marginMultiplier ? 8 * marginMultiplier : 0}px;
+  color: black;
   font-weight: 600;
 `;
 
