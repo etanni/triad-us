@@ -5093,10 +5093,10 @@ gatsby-telemetry@^1.0.11:
     stack-utils "1.0.2"
     uuid "3.3.2"
 
-gatsby-theme-shopify-poulo@^0.9.5:
-  version "0.9.5"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.9.5.tgz#e0e87aa2555f3e1abf25ce76a754f87e1f34ca43"
-  integrity sha512-4m8IgPe/uI3CP6an0Q/ypJFOslgzNs9uok7NUuH4u8ekAGMA5jTZs3gUyT1rFPfMA6w47LibImjKnBxshmRdKQ==
+gatsby-theme-shopify-poulo@^0.9.6:
+  version "0.9.6"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.9.6.tgz#e5434bbb6a443d67cf86611144463e3f4ebf1997"
+  integrity sha512-6WNS5wsIz3UDuUGngUygD+5px7Vo3bAfoyCzUiWRZEUDyHJxtZD1NL265gNX08fgS+Eo1AkgtvDbMJva2Su0nw==
   dependencies:
     "@emotion/core" "^10.0.10"
     "@emotion/is-prop-valid" "^0.7.3"
@@ -5119,7 +5119,7 @@ gatsby-theme-shopify-poulo@^0.9.5:
     gatsby-transformer-sharp "^2.1.20"
     local-storage "^2.0.0"
     lodash "^4.17.11"
-    page-kit "^0.1.1"
+    page-kit "^0.1.2"
     prop-types "^15.7.2"
     react-helmet "^5.2.1"
     react-icons "^3.7.0"
@@ -7017,6 +7017,11 @@ lockfile@^1.0.4:
   dependencies:
     signal-exit "^3.0.2"
 
+lodash-es@^4.17.11:
+  version "4.17.11"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.11.tgz#145ab4a7ac5c5e52a3531fb4f310255a152b4be0"
+  integrity sha512-DHb1ub+rMjjrxqlB3H56/6MXtm1lSksDp2rA2cNWjG8mlDUYFhUj3Di2Zn5IwSU87xLv8tNIQ7sSwE/YOX/D/Q==
+
 lodash._reinterpolate@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
@@ -8210,17 +8215,17 @@ package-json@^4.0.0:
     registry-url "^3.0.3"
     semver "^5.1.0"
 
-page-kit@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/page-kit/-/page-kit-0.1.1.tgz#cc6f6a5a88076bf946f24a5ad6750617749aae04"
-  integrity sha512-O9BRMjf3bWFgg8DqirjYPOdMk280qxx6t9yYSPJb0y20JmQkIDbfTCmTyhs3sZWwobScJSnzuu0QxCcAaGqOCw==
+page-kit@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/page-kit/-/page-kit-0.1.2.tgz#86845ed22dda2375c36fc1725ca57c0f933987e3"
+  integrity sha512-r62vui0n+sgcpynHkKhNTORogKTBl8+JMjfWNljbwpPQ+UfXRwcQYBZUtgpQhMLSv6hTTJd5S73A9asUAx1bhw==
   dependencies:
     "@emotion/core" "^10.0.10"
     "@emotion/is-prop-valid" "^0.7.3"
     "@emotion/styled" "^10.0.11"
     gatsby "^2.8.6"
     gatsby-image "^2.1.2"
-    lodash "^4.17.11"
+    lodash-es "^4.17.11"
     react-icons "^3.7.0"
 
 pako@~1.0.5:
