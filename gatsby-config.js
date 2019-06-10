@@ -27,7 +27,7 @@ module.exports = {
           shopName: 'poulo2',
           accessToken: 'e06636fefd3902d3a578c9624e064944',
         },
-        activatePWA: false,
+        activatePWA: true,
         colorMap: [
           { key: 'PANTONE 16-4134 TCX', value: 'rgb(83, 156, 204)' },
           { key: 'PANTONE 2227 XGC', value: 'rgb(91, 190, 196)' },
