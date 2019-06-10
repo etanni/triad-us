@@ -5093,10 +5093,10 @@ gatsby-telemetry@^1.0.11:
     stack-utils "1.0.2"
     uuid "3.3.2"
 
-gatsby-theme-shopify-poulo@^0.9.2:
-  version "0.9.2"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.9.2.tgz#40d2f17080e9ef381b583e48fa84214b47f52979"
-  integrity sha512-vqylL+DVw2bBWSSS6lnvaWww4swKDDei+dT/K9JSAHD6+QGth8OyWVMr89vz46HYI94taMRiWfSdJa2xIRBkAg==
+gatsby-theme-shopify-poulo@^0.9.3:
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.9.3.tgz#15eba032db11a978f75e2040310bb86247fd017c"
+  integrity sha512-altw8aMvx3hpMJ6IuK6RsR0XoQW2sGG4ctF+QVzJ89//LN0NLgAn29iCzJxbJFdSsskOn+UTFk34kLI92xJRwg==
   dependencies:
     "@emotion/core" "^10.0.10"
     "@emotion/is-prop-valid" "^0.7.3"
@@ -5119,7 +5119,7 @@ gatsby-theme-shopify-poulo@^0.9.2:
     gatsby-transformer-sharp "^2.1.20"
     local-storage "^2.0.0"
     lodash "^4.17.11"
-    page-kit "^0.0.4"
+    page-kit "^0.1.0"
     prop-types "^15.7.2"
     react-helmet "^5.2.1"
     react-icons "^3.7.0"
@@ -8210,21 +8210,17 @@ package-json@^4.0.0:
     registry-url "^3.0.3"
     semver "^5.1.0"
 
-page-kit@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/page-kit/-/page-kit-0.0.4.tgz#0b0b79962785fb8c9daca1d35acfab207af73b72"
-  integrity sha512-uePzqgYb/geI6CSiguztX2f15mk1IsE7blp43urf2pN59efTzhwpGvNOzeq/51U0JOLZGMBaPgyU9V0lauhYPg==
+page-kit@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/page-kit/-/page-kit-0.1.0.tgz#8ae1a8445b929fb04c3e785e7c2e6926fe5aab9b"
+  integrity sha512-f5WFNgUYm29gd6bifaPVIPHXZY3MWfAyc0ITk0uERyqqplTUHUL9bBqG182QMWWveOzLbUqTRpbnGwG0Im+qKw==
   dependencies:
     "@emotion/core" "^10.0.10"
     "@emotion/is-prop-valid" "^0.7.3"
     "@emotion/styled" "^10.0.11"
     gatsby "^2.8.6"
     gatsby-image "^2.1.2"
-    prop-types "^15.7.2"
-    react "16.8.6"
-    react-dom "16.8.6"
     react-icons "^3.7.0"
-    uniqid "^5.0.3"
 
 pako@~1.0.5:
   version "1.0.10"
@@ -9219,7 +9215,7 @@ react-dev-utils@^4.2.1:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@16.8.6, react-dom@^16.8.6:
+react-dom@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
   integrity sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==
@@ -9299,7 +9295,7 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react@16.8.6, react@^16.8.4, react@^16.8.6:
+react@^16.8.4, react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
   integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
@@ -11018,11 +11014,6 @@ uniq@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/uniq/-/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"
   integrity sha1-sxxa6CVIRKOoKBVBzisEuGWnNP8=
-
-uniqid@^5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/uniqid/-/uniqid-5.0.3.tgz#917968310edc868d50df6c44f783f32c7d80fac1"
-  integrity sha512-R2qx3X/LYWSdGRaluio4dYrPXAJACTqyUjuyXHoJLBUOIfmMcnYOyY2d6Y4clZcIz5lK6ZaI0Zzmm0cPfsIqzQ==
 
 uniqs@^2.0.0:
   version "2.0.0"
