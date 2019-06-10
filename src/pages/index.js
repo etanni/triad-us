@@ -2,16 +2,15 @@ import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 
 import {
-  ProductCardList,
-  Section,
-  Seo,
   Hero,
-  PageLayout,
-  Paragraph,
+  Section,
+  ProductCardList,
   PrimaryTitle,
-  SubTitle,
   SecondaryTitle,
-} from 'gatsby-theme-shopify-poulo';
+  SubTitle,
+  Paragraph,
+} from 'page-kit';
+import { Seo, PageLayout } from 'gatsby-theme-shopify-poulo';
 
 import { Trusted } from '../components/Trusted';
 import WhiteLogo from '../images/white-logo-circle.png';

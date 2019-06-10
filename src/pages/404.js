@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 
-import {
-  SectionDescription,
-  ProductCardList,
-  ErrorPage,
-} from 'gatsby-theme-shopify-poulo';
+import { SectionDescription, ProductCardList } from 'page-kit';
+import { ErrorPage } from 'gatsby-theme-shopify-poulo';
 import { ColoredSection } from '../styles';
 
 export default ({ data: { allShopifyProduct } }) => {

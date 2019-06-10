@@ -1,5 +1,5 @@
 import React from 'react';
-import { PrimaryTitle } from 'gatsby-theme-shopify-poulo';
+import { PrimaryTitle } from 'page-kit';
 
 import { Wrapper, TrustedIcons } from './styles';
 import { NFL } from './Icons/nfl';

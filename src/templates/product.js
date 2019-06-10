@@ -1,23 +1,24 @@
 import React, { useState } from 'react';
 import { graphql } from 'gatsby';
+
 import {
-  ProductCardList,
-  Section,
-  ProductPage,
   Hero,
+  Section,
   EqualColumns,
   EqualColumn,
   ImageGridTwoHalfOneFullwidth,
   ImageGridTwoHalf,
   OneHalfChild,
   FullwidthChild,
+  ProductCardList,
   PrimaryTitle,
   SecondaryTitle,
   SubTitle,
   Paragraph,
-  useMedia,
   ButtonLink,
-} from 'gatsby-theme-shopify-poulo';
+  useMedia,
+} from 'page-kit';
+import { ProductPage } from 'gatsby-theme-shopify-poulo';
 
 import ImageGridContent from '../components/ImageGridContent';
 import IconGrid from '../components/IconGrid';
@@ -152,13 +153,13 @@ const Product = ({ data }) => {
           fullWidth
         >
           <SecondaryTitle as="h2">ENGINEERED CONFIDENCE</SecondaryTitle>
-          <SubTitle as="h3">
+          <Paragraph>
             The Thrive collection gives you the confidence to finally ask "the
             one" on that first date, rock the night sweat free at your local
             music venue, and scarf down your favorite juicy burger with the boys
             without worrying about the barbeque sauce that just dripped onto
             your chest.
-          </SubTitle>
+          </Paragraph>
         </Hero>
         <ImageGridTwoHalfOneFullwidth rowHeight={desktop ? 600 : 700} fullWidth>
           <OneHalfChild background="#e9e9e9">
@@ -284,7 +285,9 @@ export const query = graphql`
         }
       }
     }
-    nature: file(relativePath: { eq: "on_that_ass_engineered_confidence.jpg" }) {
+    nature: file(
+      relativePath: { eq: "on_that_ass_engineered_confidence.jpg" }
+    ) {
       childImageSharp {
         fluid(sizes: "100vw", quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -376,7 +379,7 @@ export const query = graphql`
         id
         localFile {
           childImageSharp {
-            fluid(maxWidth: 450) {
+            fluid(maxWidth: 900) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }

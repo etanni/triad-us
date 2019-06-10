@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import {
   ProductCardList,
   Section,
-  ProductPage,
   Hero,
   Button,
   EqualColumns,
@@ -12,7 +11,8 @@ import {
   ImageGridTwoHalfOneFullwidth,
   OneHalfChild,
   FullwidthChild,
-} from 'gatsby-theme-shopify-poulo';
+} from 'page-kit';
+import { ProductPage } from 'gatsby-theme-shopify-poulo';
 
 import ImageGridContent from '../components/ImageGridContent';
 import LargeBG1 from '../images/large-bg-1.png';

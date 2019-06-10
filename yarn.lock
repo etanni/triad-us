@@ -2786,7 +2786,7 @@ configstore@^4.0.0:
     write-file-atomic "^2.0.0"
     xdg-basedir "^3.0.0"
 
-confusing-browser-globals@^1.0.6:
+confusing-browser-globals@^1.0.6, confusing-browser-globals@^1.0.7:
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/confusing-browser-globals/-/confusing-browser-globals-1.0.7.tgz#5ae852bd541a910e7ffb2dbb864a2d21a36ad29b"
   integrity sha512-cgHI1azax5ATrZ8rJ+ODDML9Fvu67PimB6aNxBrc/QwSaDaM9eTfIEUHx3bBLJJ82ioSb+/5zfsMCCEJax3ByQ==
@@ -3955,6 +3955,13 @@ eslint-config-react-app@^3.0.0:
   dependencies:
     confusing-browser-globals "^1.0.6"
 
+eslint-config-react-app@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-react-app/-/eslint-config-react-app-4.0.1.tgz#23fd0fd7ea89442ef1e733f66a7207674b23c8db"
+  integrity sha512-ZsaoXUIGsK8FCi/x4lT2bZR5mMkL/Kgj+Lnw690rbvvUr/uiwgFiD8FcfAhkCycm7Xte6O5lYz4EqMx2vX7jgw==
+  dependencies:
+    confusing-browser-globals "^1.0.7"
+
 eslint-import-resolver-node@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.2.tgz#58f15fb839b8d0576ca980413476aab2472db66a"
@@ -5086,10 +5093,10 @@ gatsby-telemetry@^1.0.11:
     stack-utils "1.0.2"
     uuid "3.3.2"
 
-gatsby-theme-shopify-poulo@^0.8.14:
-  version "0.8.14"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.8.14.tgz#446d01b77a01d883f76f8fa1a04087b78fdd4bc4"
-  integrity sha512-aJmmk8Eb8WHnt3w4qxaHsbE35l0Xdanz2Jy2TDlgs6fbMgxGqGLMma2Ly0N+AhAKLT+b5WLGF61LhKPta7e1Bg==
+gatsby-theme-shopify-poulo@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-shopify-poulo/-/gatsby-theme-shopify-poulo-0.9.1.tgz#3cc98cf304a1f807f9aa15695dda9abe35007cba"
+  integrity sha512-WZUhMd7uUjYTyQKJanjKn69QtfASM2upsgXVOQKi3IF0kptvUb2wpH88B5j37mOWyyql+C+sUhWRrgE1Pyrelg==
   dependencies:
     "@emotion/core" "^10.0.10"
     "@emotion/is-prop-valid" "^0.7.3"
@@ -5112,6 +5119,7 @@ gatsby-theme-shopify-poulo@^0.8.14:
     gatsby-transformer-sharp "^2.1.20"
     local-storage "^2.0.0"
     lodash "^4.17.11"
+    page-kit "^0.0.4"
     prop-types "^15.7.2"
     react-helmet "^5.2.1"
     react-icons "^3.7.0"
@@ -8202,6 +8210,22 @@ package-json@^4.0.0:
     registry-url "^3.0.3"
     semver "^5.1.0"
 
+page-kit@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/page-kit/-/page-kit-0.0.4.tgz#0b0b79962785fb8c9daca1d35acfab207af73b72"
+  integrity sha512-uePzqgYb/geI6CSiguztX2f15mk1IsE7blp43urf2pN59efTzhwpGvNOzeq/51U0JOLZGMBaPgyU9V0lauhYPg==
+  dependencies:
+    "@emotion/core" "^10.0.10"
+    "@emotion/is-prop-valid" "^0.7.3"
+    "@emotion/styled" "^10.0.11"
+    gatsby "^2.8.6"
+    gatsby-image "^2.1.2"
+    prop-types "^15.7.2"
+    react "16.8.6"
+    react-dom "16.8.6"
+    react-icons "^3.7.0"
+    uniqid "^5.0.3"
+
 pako@~1.0.5:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/pako/-/pako-1.0.10.tgz#4328badb5086a426aa90f541977d4955da5c9732"
@@ -9195,7 +9219,7 @@ react-dev-utils@^4.2.1:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.8.6:
+react-dom@16.8.6, react-dom@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.6.tgz#71d6303f631e8b0097f56165ef608f051ff6e10f"
   integrity sha512-1nL7PIq9LTL3fthPqwkvr2zY7phIPjYrT0jp4HjyEQrEROnw4dG41VVwi/wfoCneoleqrNX7iAD+pXebJZwrwA==
@@ -9275,7 +9299,7 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react@^16.8.4, react@^16.8.6:
+react@16.8.6, react@^16.8.4, react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
   integrity sha512-pC0uMkhLaHm11ZSJULfOBqV4tIZkx87ZLvbbQYunNixAAvjnC+snJCg0XQXn9VIsttVsbZP/H/ewzgsd5fxKXw==
@@ -10994,6 +11018,11 @@ uniq@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/uniq/-/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"
   integrity sha1-sxxa6CVIRKOoKBVBzisEuGWnNP8=
+
+uniqid@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/uniqid/-/uniqid-5.0.3.tgz#917968310edc868d50df6c44f783f32c7d80fac1"
+  integrity sha512-R2qx3X/LYWSdGRaluio4dYrPXAJACTqyUjuyXHoJLBUOIfmMcnYOyY2d6Y4clZcIz5lK6ZaI0Zzmm0cPfsIqzQ==
 
 uniqs@^2.0.0:
   version "2.0.0"

@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-import { Section } from 'gatsby-theme-shopify-poulo';
+import { Section } from 'page-kit';
 
 export const ColoredSection = styled(Section)`
   background-color: #1f4940;

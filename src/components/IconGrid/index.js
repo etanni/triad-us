@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { IoIosSnow, IoIosRose, IoIosSpeedometer } from 'react-icons/io';
-import { Paragraph } from 'gatsby-theme-shopify-poulo';
+import { Paragraph } from 'page-kit';
 
 const Wrapper = styled.div`
   display: flex;

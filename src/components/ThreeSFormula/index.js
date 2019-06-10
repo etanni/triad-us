@@ -7,7 +7,7 @@ import {
   SecondaryTitle,
   Paragraph,
   Button,
-} from 'gatsby-theme-shopify-poulo';
+} from 'page-kit';
 
 import { CardWrapper, Card, CardImage, CardContent } from './styles';
 
